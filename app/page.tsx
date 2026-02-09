@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import {
   Calculator,
   BookOpen,
@@ -14,6 +15,7 @@ const subjects = [
   {
     id: 1,
     name: 'Toán',
+    slug: 'toan',
     icon: Calculator,
     color: 'text-blue-600',
     bgColor: 'bg-blue-50',
@@ -22,6 +24,7 @@ const subjects = [
   {
     id: 2,
     name: 'Tiếng Việt',
+    slug: 'tieng-viet',
     icon: BookOpen,
     color: 'text-red-600',
     bgColor: 'bg-red-50',
@@ -30,6 +33,7 @@ const subjects = [
   {
     id: 3,
     name: 'Khoa học',
+    slug: 'khoa-hoc',
     icon: FlaskConical,
     color: 'text-green-600',
     bgColor: 'bg-green-50',
@@ -38,6 +42,7 @@ const subjects = [
   {
     id: 4,
     name: 'Lịch sử & Địa lý',
+    slug: 'lich-su-dia-ly',
     icon: Globe,
     color: 'text-amber-600',
     bgColor: 'bg-amber-50',
@@ -46,6 +51,7 @@ const subjects = [
   {
     id: 5,
     name: 'Đạo đức',
+    slug: 'dao-duc',
     icon: Heart,
     color: 'text-pink-600',
     bgColor: 'bg-pink-50',
@@ -54,6 +60,7 @@ const subjects = [
   {
     id: 6,
     name: 'Âm nhạc',
+    slug: 'am-nhac',
     icon: Music,
     color: 'text-purple-600',
     bgColor: 'bg-purple-50',
@@ -62,6 +69,7 @@ const subjects = [
   {
     id: 7,
     name: 'Mỹ thuật',
+    slug: 'my-thuat',
     icon: Palette,
     color: 'text-orange-600',
     bgColor: 'bg-orange-50',
@@ -70,6 +78,7 @@ const subjects = [
   {
     id: 8,
     name: 'Thể dục',
+    slug: 'the-duc',
     icon: Activity,
     color: 'text-teal-600',
     bgColor: 'bg-teal-50',
@@ -95,10 +104,12 @@ export default function HomePage() {
       <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
         {subjects.map((subject) => {
           const Icon = subject.icon;
-          return (
+
+          const cardContent = (
             <Card
-              key={subject.id}
-              className="cursor-pointer transition-all hover:-translate-y-1 hover:shadow-lg"
+              className={`h-full transition-all hover:-translate-y-1 hover:shadow-lg ${
+                subject.active ? 'cursor-pointer' : ''
+              }`}
             >
               <CardHeader>
                 <div
@@ -120,6 +131,14 @@ export default function HomePage() {
                 </span>
               </CardContent>
             </Card>
+          );
+
+          return subject.active ? (
+            <Link key={subject.id} href={`/mon/${subject.slug}`}>
+              {cardContent}
+            </Link>
+          ) : (
+            <div key={subject.id}>{cardContent}</div>
           );
         })}
       </div>
