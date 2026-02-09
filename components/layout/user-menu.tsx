@@ -9,11 +9,12 @@ import type { User } from '@supabase/supabase-js';
 
 export function UserMenu() {
   const router = useRouter();
+  const supabase = createClient();
   const [user, setUser] = useState<User | null>(null);
-  const [loading, setLoading] = useState(true);
+  const [loading, setLoading] = useState(!!supabase);
 
   useEffect(() => {
-    const supabase = createClient();
+    if (!supabase) return;
 
     supabase.auth.getUser().then(({ data: { user } }) => {
       setUser(user);
@@ -30,7 +31,7 @@ export function UserMenu() {
   }, []);
 
   const handleSignOut = async () => {
-    const supabase = createClient();
+    if (!supabase) return;
     await supabase.auth.signOut();
     router.push('/');
     router.refresh();

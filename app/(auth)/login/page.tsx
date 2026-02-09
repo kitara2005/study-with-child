@@ -26,6 +26,10 @@ function LoginForm() {
 
     try {
       const supabase = createClient();
+      if (!supabase) {
+        setError('Supabase chưa được cấu hình');
+        return;
+      }
       const { error } = await supabase.auth.signInWithPassword({
         email,
         password,
@@ -54,6 +58,10 @@ function LoginForm() {
           : '/';
 
       const supabase = createClient();
+      if (!supabase) {
+        setError('Supabase chưa được cấu hình');
+        return;
+      }
       await supabase.auth.signInWithOAuth({
         provider: 'google',
         options: {

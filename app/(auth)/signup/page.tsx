@@ -25,6 +25,10 @@ export default function SignupPage() {
 
     try {
       const supabase = createClient();
+      if (!supabase) {
+        setError('Supabase chưa được cấu hình');
+        return;
+      }
       const { error: signUpError, data } = await supabase.auth.signUp({
         email,
         password,
