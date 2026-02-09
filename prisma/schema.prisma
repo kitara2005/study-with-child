@@ -1,14 +1,128 @@
 // This is your Prisma schema file,
 // learn more about it in the docs: https://pris.ly/d/prisma-schema
 
-// Looking for ways to speed up your queries, or scale easily with your serverless or edge functions?
-// Try Prisma Accelerate: https://pris.ly/cli/accelerate-init
-
 generator client {
-  provider = "prisma-client"
+  provider = "prisma-client-js"
   output   = "../lib/generated/prisma"
 }
 
 datasource db {
   provider = "postgresql"
+}
+
+// User profile linked to Supabase Auth (auth.users)
+model User {
+  id        String   @id @default(uuid()) @db.Uuid
+  email     String   @unique
+  fullName  String   @map("full_name")
+  avatarUrl String?  @map("avatar_url")
+  role      UserRole @default(STUDENT)
+  parentId  String?  @map("parent_id") @db.Uuid
+  grade     Int      @default(4)
+  createdAt DateTime @default(now()) @map("created_at")
+  updatedAt DateTime @updatedAt @map("updated_at")
+
+  parent   User?    @relation("ParentChild", fields: [parentId], references: [id])
+  children User[]   @relation("ParentChild")
+  results  Result[]
+
+  @@map("users")
+}
+
+enum UserRole {
+  STUDENT
+  PARENT
+  ADMIN
+}
+
+model Subject {
+  id         String    @id @default(uuid()) @db.Uuid
+  name       String    @unique
+  slug       String    @unique
+  icon       String    // lucide icon name
+  color      String    // tailwind color class
+  orderIndex Int       @map("order_index")
+  createdAt  DateTime  @default(now()) @map("created_at")
+
+  chapters Chapter[]
+
+  @@map("subjects")
+}
+
+model Chapter {
+  id         String   @id @default(uuid()) @db.Uuid
+  subjectId  String   @map("subject_id") @db.Uuid
+  name       String
+  slug       String
+  semester   Int      @default(1)
+  orderIndex Int      @map("order_index")
+  createdAt  DateTime @default(now()) @map("created_at")
+
+  subject Subject  @relation(fields: [subjectId], references: [id], onDelete: Cascade)
+  lessons Lesson[]
+
+  @@unique([subjectId, slug])
+  @@index([subjectId])
+  @@map("chapters")
+}
+
+model Lesson {
+  id            String   @id @default(uuid()) @db.Uuid
+  chapterId     String   @map("chapter_id") @db.Uuid
+  title         String
+  slug          String
+  theoryContent Json     @map("theory_content") // LessonContent JSON
+  orderIndex    Int      @map("order_index")
+  createdAt     DateTime @default(now()) @map("created_at")
+  updatedAt     DateTime @updatedAt @map("updated_at")
+
+  chapter   Chapter    @relation(fields: [chapterId], references: [id], onDelete: Cascade)
+  exercises Exercise[]
+  results   Result[]
+
+  @@unique([chapterId, slug])
+  @@index([chapterId])
+  @@map("lessons")
+}
+
+model Exercise {
+  id            String       @id @default(uuid()) @db.Uuid
+  lessonId      String       @map("lesson_id") @db.Uuid
+  type          ExerciseType
+  question      String
+  options       Json?        // for multiple choice: [{label, value}]
+  correctAnswer String       @map("correct_answer")
+  explanation   String?
+  orderIndex    Int          @map("order_index")
+  createdAt     DateTime     @default(now()) @map("created_at")
+
+  lesson Lesson @relation(fields: [lessonId], references: [id], onDelete: Cascade)
+
+  @@index([lessonId])
+  @@map("exercises")
+}
+
+enum ExerciseType {
+  MULTIPLE_CHOICE
+  FILL_BLANK
+  DRAG_DROP
+  TRUE_FALSE
+}
+
+model Result {
+  id          String   @id @default(uuid()) @db.Uuid
+  userId      String   @map("user_id") @db.Uuid
+  lessonId    String   @map("lesson_id") @db.Uuid
+  score       Int      // percentage 0-100
+  stars       Int      @default(0) // 0-3
+  answers     Json     // user's answers [{exerciseId, answer, correct}]
+  timeSpent   Int?     @map("time_spent") // seconds
+  completedAt DateTime @default(now()) @map("completed_at")
+
+  user   User   @relation(fields: [userId], references: [id], onDelete: Cascade)
+  lesson Lesson @relation(fields: [lessonId], references: [id], onDelete: Cascade)
+
+  @@index([userId, lessonId])
+  @@index([userId])
+  @@map("results")
 }
