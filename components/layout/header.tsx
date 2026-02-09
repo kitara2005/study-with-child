@@ -2,6 +2,7 @@ import Link from 'next/link';
 import { BookOpen } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { MobileNavigation } from './mobile-navigation';
+import { UserMenu } from './user-menu';
 
 export function Header() {
   const navLinks = [
@@ -25,6 +26,7 @@ export function Header() {
               <Link href={link.href}>{link.label}</Link>
             </Button>
           ))}
+          <UserMenu />
         </nav>
 
         {/* Mobile Navigation */}
