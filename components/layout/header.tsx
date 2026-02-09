@@ -7,8 +7,7 @@ import { UserMenu } from './user-menu';
 export function Header() {
   const navLinks = [
     { href: '/', label: 'Trang chủ' },
-    { href: '/mon-hoc', label: 'Môn học' },
-    { href: '/ve-chung-toi', label: 'Về chúng tôi' },
+    { href: '/#mon-hoc', label: 'Môn học' },
   ];
 
   return (

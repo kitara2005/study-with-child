@@ -5,7 +5,7 @@ import { BreadcrumbNavigation } from '@/components/content/breadcrumb-navigation
 import { ChapterCard } from '@/components/content/chapter-card';
 import * as Icons from 'lucide-react';
 
-export const dynamic = 'force-dynamic';
+export const revalidate = 3600; // ISR: revalidate every 1 hour
 
 type PageProps = {
   params: Promise<{ subjectSlug: string }>;

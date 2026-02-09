@@ -47,11 +47,17 @@ function LoginForm() {
 
   const handleGoogleLogin = async () => {
     try {
+      // Validate redirect to prevent open redirect
+      const safeRedirect =
+        redirectTo.startsWith('/') && !redirectTo.startsWith('//')
+          ? redirectTo
+          : '/';
+
       const supabase = createClient();
       await supabase.auth.signInWithOAuth({
         provider: 'google',
         options: {
-          redirectTo: `${window.location.origin}/auth/callback?redirect=${redirectTo}`,
+          redirectTo: `${window.location.origin}/auth/callback?redirect=${safeRedirect}`,
         },
       });
     } catch {

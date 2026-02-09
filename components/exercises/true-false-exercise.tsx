@@ -20,23 +20,23 @@ export function TrueFalseExercise({
       <div className="flex gap-4">
         <Button
           size="lg"
-          variant={selectedAnswer === 'true' ? 'default' : 'outline'}
+          variant={selectedAnswer === 'Đúng' ? 'default' : 'outline'}
           className={cn(
             'flex-1',
-            selectedAnswer === 'true' && 'ring-primary ring-2'
+            selectedAnswer === 'Đúng' && 'ring-primary ring-2'
           )}
-          onClick={() => onAnswer('true')}
+          onClick={() => onAnswer('Đúng')}
         >
           Đúng
         </Button>
         <Button
           size="lg"
-          variant={selectedAnswer === 'false' ? 'default' : 'outline'}
+          variant={selectedAnswer === 'Sai' ? 'default' : 'outline'}
           className={cn(
             'flex-1',
-            selectedAnswer === 'false' && 'ring-primary ring-2'
+            selectedAnswer === 'Sai' && 'ring-primary ring-2'
           )}
-          onClick={() => onAnswer('false')}
+          onClick={() => onAnswer('Sai')}
         >
           Sai
         </Button>

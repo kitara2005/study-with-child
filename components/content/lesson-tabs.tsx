@@ -12,14 +12,14 @@ type LessonTabsProps = {
   theoryContent: LessonContent;
   exercises: Exercise[];
   lessonId: string;
-  onNext?: () => void;
+  nextLessonUrl?: string;
 };
 
 export function LessonTabs({
   theoryContent,
   exercises,
   lessonId,
-  onNext,
+  nextLessonUrl,
 }: LessonTabsProps) {
   const [activeTab, setActiveTab] = useState<'theory' | 'exercises'>('theory');
 
@@ -53,7 +53,7 @@ export function LessonTabs({
           <ExerciseContainer
             exercises={exercises}
             lessonId={lessonId}
-            onNext={onNext}
+            nextLessonUrl={nextLessonUrl}
           />
         )}
       </div>

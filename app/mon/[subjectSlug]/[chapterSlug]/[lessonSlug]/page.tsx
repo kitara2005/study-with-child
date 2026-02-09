@@ -8,7 +8,7 @@ import { Button } from '@/components/ui/button';
 import { ArrowRight } from 'lucide-react';
 import { LessonContent } from '@/types/content';
 
-export const dynamic = 'force-dynamic';
+export const revalidate = 3600; // ISR: revalidate every 1 hour
 
 type PageProps = {
   params: Promise<{
@@ -116,11 +116,9 @@ export default async function LessonPage({ params }: PageProps) {
         theoryContent={theoryContent}
         exercises={lesson.exercises}
         lessonId={lesson.id}
-        onNext={
+        nextLessonUrl={
           nextLesson
-            ? () => {
-                window.location.href = `/mon/${subjectSlug}/${chapterSlug}/${nextLesson.slug}`;
-              }
+            ? `/mon/${subjectSlug}/${chapterSlug}/${nextLesson.slug}`
             : undefined
         }
       />

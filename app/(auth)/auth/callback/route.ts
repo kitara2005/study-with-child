@@ -6,12 +6,16 @@ export async function GET(request: Request) {
   const code = searchParams.get('code');
   const redirect = searchParams.get('redirect') || '/';
 
+  // Validate redirect to prevent open redirect vulnerability
+  const safeRedirect =
+    redirect.startsWith('/') && !redirect.startsWith('//') ? redirect : '/';
+
   if (code) {
     const supabase = await createClient();
     const { error } = await supabase.auth.exchangeCodeForSession(code);
 
     if (!error) {
-      return NextResponse.redirect(`${origin}${redirect}`);
+      return NextResponse.redirect(`${origin}${safeRedirect}`);
     }
   }
 

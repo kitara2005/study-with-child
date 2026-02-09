@@ -20,7 +20,14 @@ export async function GET() {
 
     return NextResponse.json(lessons);
   } catch (error) {
-    return NextResponse.json({ error: 'Unauthorized' }, { status: 401 });
+    if (error instanceof Error && error.message === 'Unauthorized') {
+      return NextResponse.json({ error: 'Unauthorized' }, { status: 401 });
+    }
+    console.error('GET /api/admin/lessons error:', error);
+    return NextResponse.json(
+      { error: 'Internal server error' },
+      { status: 500 }
+    );
   }
 }
 
@@ -30,6 +37,38 @@ export async function POST(request: NextRequest) {
 
     const body = await request.json();
     const { title, slug, chapterId, theoryContent, orderIndex } = body;
+
+    // Validate required fields
+    if (!title || typeof title !== 'string') {
+      return NextResponse.json(
+        { error: 'Title is required and must be a string' },
+        { status: 400 }
+      );
+    }
+    if (!slug || typeof slug !== 'string') {
+      return NextResponse.json(
+        { error: 'Slug is required and must be a string' },
+        { status: 400 }
+      );
+    }
+    if (!chapterId || typeof chapterId !== 'string') {
+      return NextResponse.json(
+        { error: 'ChapterId is required and must be a string' },
+        { status: 400 }
+      );
+    }
+    if (!theoryContent || typeof theoryContent !== 'object') {
+      return NextResponse.json(
+        { error: 'TheoryContent is required and must be an object' },
+        { status: 400 }
+      );
+    }
+    if (typeof orderIndex !== 'number') {
+      return NextResponse.json(
+        { error: 'OrderIndex must be a number' },
+        { status: 400 }
+      );
+    }
 
     const lesson = await prisma.lesson.create({
       data: {
@@ -43,9 +82,12 @@ export async function POST(request: NextRequest) {
 
     return NextResponse.json(lesson, { status: 201 });
   } catch (error) {
-    console.error('Error creating lesson:', error);
+    if (error instanceof Error && error.message === 'Unauthorized') {
+      return NextResponse.json({ error: 'Unauthorized' }, { status: 401 });
+    }
+    console.error('POST /api/admin/lessons error:', error);
     return NextResponse.json(
-      { error: 'Failed to create lesson' },
+      { error: 'Internal server error' },
       { status: 500 }
     );
   }

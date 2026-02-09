@@ -3,6 +3,11 @@ import { prisma } from '@/lib/prisma';
 import { gradeExercises, type UserAnswer } from '@/lib/grading/auto-grader';
 import { calculateStars } from '@/lib/grading/star-calculator';
 
+// NOTE: This endpoint is intentionally public (no authentication required) for MVP.
+// All exercises are free and accessible without login. Users can practice without creating an account.
+// Rate limiting should be added in production to prevent abuse.
+// When user accounts are implemented, we'll save progress to database (see TODO below).
+
 export async function POST(request: NextRequest) {
   try {
     const body = await request.json();

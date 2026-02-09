@@ -12,13 +12,13 @@ import type { GradingResult } from '@/lib/grading/auto-grader';
 type ExerciseContainerProps = {
   exercises: Exercise[];
   lessonId: string;
-  onNext?: () => void;
+  nextLessonUrl?: string;
 };
 
 export function ExerciseContainer({
   exercises,
   lessonId,
-  onNext,
+  nextLessonUrl,
 }: ExerciseContainerProps) {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [userAnswers, setUserAnswers] = useState<Map<string, string>>(
@@ -88,6 +88,12 @@ export function ExerciseContainer({
     setCurrentIndex(0);
   };
 
+  const handleNextLesson = nextLessonUrl
+    ? () => {
+        window.location.href = nextLessonUrl;
+      }
+    : undefined;
+
   if (submitted && result) {
     return (
       <ResultScreen
@@ -95,7 +101,7 @@ export function ExerciseContainer({
         stars={result.stars}
         details={result.details}
         onRetry={handleRetry}
-        onNext={onNext}
+        onNext={handleNextLesson}
       />
     );
   }

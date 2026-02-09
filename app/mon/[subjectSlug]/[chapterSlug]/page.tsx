@@ -4,7 +4,7 @@ import { prisma } from '@/lib/prisma';
 import { BreadcrumbNavigation } from '@/components/content/breadcrumb-navigation';
 import { LessonCard } from '@/components/content/lesson-card';
 
-export const dynamic = 'force-dynamic';
+export const revalidate = 3600; // ISR: revalidate every 1 hour
 
 type PageProps = {
   params: Promise<{ subjectSlug: string; chapterSlug: string }>;

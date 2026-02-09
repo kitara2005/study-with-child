@@ -23,7 +23,14 @@ export async function GET() {
 
     return NextResponse.json(exercises);
   } catch (error) {
-    return NextResponse.json({ error: 'Unauthorized' }, { status: 401 });
+    if (error instanceof Error && error.message === 'Unauthorized') {
+      return NextResponse.json({ error: 'Unauthorized' }, { status: 401 });
+    }
+    console.error('GET /api/admin/exercises error:', error);
+    return NextResponse.json(
+      { error: 'Internal server error' },
+      { status: 500 }
+    );
   }
 }
 
@@ -42,6 +49,41 @@ export async function POST(request: NextRequest) {
       orderIndex,
     } = body;
 
+    // Validate required fields
+    if (!lessonId || typeof lessonId !== 'string') {
+      return NextResponse.json(
+        { error: 'LessonId is required and must be a string' },
+        { status: 400 }
+      );
+    }
+    if (
+      !type ||
+      !['MULTIPLE_CHOICE', 'FILL_BLANK', 'TRUE_FALSE'].includes(type)
+    ) {
+      return NextResponse.json(
+        { error: 'Type must be MULTIPLE_CHOICE, FILL_BLANK, or TRUE_FALSE' },
+        { status: 400 }
+      );
+    }
+    if (!question || typeof question !== 'string') {
+      return NextResponse.json(
+        { error: 'Question is required and must be a string' },
+        { status: 400 }
+      );
+    }
+    if (!correctAnswer || typeof correctAnswer !== 'string') {
+      return NextResponse.json(
+        { error: 'CorrectAnswer is required and must be a string' },
+        { status: 400 }
+      );
+    }
+    if (typeof orderIndex !== 'number') {
+      return NextResponse.json(
+        { error: 'OrderIndex must be a number' },
+        { status: 400 }
+      );
+    }
+
     const exercise = await prisma.exercise.create({
       data: {
         lessonId,
@@ -56,9 +98,12 @@ export async function POST(request: NextRequest) {
 
     return NextResponse.json(exercise, { status: 201 });
   } catch (error) {
-    console.error('Error creating exercise:', error);
+    if (error instanceof Error && error.message === 'Unauthorized') {
+      return NextResponse.json({ error: 'Unauthorized' }, { status: 401 });
+    }
+    console.error('POST /api/admin/exercises error:', error);
     return NextResponse.json(
-      { error: 'Failed to create exercise' },
+      { error: 'Internal server error' },
       { status: 500 }
     );
   }

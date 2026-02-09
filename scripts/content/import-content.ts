@@ -1,42 +1,9 @@
 import { readFileSync, readdirSync, statSync } from 'fs';
 import { join } from 'path';
 import { PrismaClient } from '../../lib/generated/prisma';
+import { LessonData } from './content-schema';
 
 const prisma = new PrismaClient();
-
-interface LessonSection {
-  type: 'heading' | 'paragraph' | 'visual' | 'example';
-  content?: string;
-  question?: string;
-  solution?: string;
-  visualType?: string;
-  data?: Record<string, unknown>;
-}
-
-interface LessonContent {
-  sections: LessonSection[];
-  keyPoints: string[];
-}
-
-interface Exercise {
-  type: 'MULTIPLE_CHOICE' | 'FILL_BLANK' | 'TRUE_FALSE';
-  question: string;
-  options?: Array<{ label: string; value: string }>;
-  correctAnswer: string;
-  explanation: string;
-  orderIndex: number;
-}
-
-interface LessonData {
-  subject: string;
-  chapter: string;
-  title: string;
-  slug: string;
-  orderIndex: number;
-  theoryContent: LessonContent;
-  exercises: Exercise[];
-}
-
 const CONTENT_DIR = join(process.cwd(), 'content');
 
 async function importLessonFile(filePath: string): Promise<boolean> {
