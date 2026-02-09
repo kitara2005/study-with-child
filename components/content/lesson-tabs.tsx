@@ -2,16 +2,25 @@
 
 import { useState } from 'react';
 import { LessonContent } from '@/types/content';
+import { Exercise } from '@/lib/generated/prisma';
 import { TheoryRenderer } from './theory-renderer';
+import { ExerciseContainer } from '@/components/exercises/exercise-container';
 import { Button } from '@/components/ui/button';
 import { BookOpen, PenTool } from 'lucide-react';
 
 type LessonTabsProps = {
   theoryContent: LessonContent;
-  exerciseCount: number;
+  exercises: Exercise[];
+  lessonId: string;
+  onNext?: () => void;
 };
 
-export function LessonTabs({ theoryContent, exerciseCount }: LessonTabsProps) {
+export function LessonTabs({
+  theoryContent,
+  exercises,
+  lessonId,
+  onNext,
+}: LessonTabsProps) {
   const [activeTab, setActiveTab] = useState<'theory' | 'exercises'>('theory');
 
   return (
@@ -32,7 +41,7 @@ export function LessonTabs({ theoryContent, exerciseCount }: LessonTabsProps) {
           className="rounded-b-none"
         >
           <PenTool className="h-4 w-4" />
-          Bài tập ({exerciseCount})
+          Bài tập ({exercises.length})
         </Button>
       </div>
 
@@ -41,10 +50,11 @@ export function LessonTabs({ theoryContent, exerciseCount }: LessonTabsProps) {
         {activeTab === 'theory' ? (
           <TheoryRenderer content={theoryContent} />
         ) : (
-          <div className="text-muted-foreground py-12 text-center">
-            <PenTool className="mx-auto mb-4 h-12 w-12 opacity-50" />
-            <p>Bài tập sẽ được thêm trong Phase 05</p>
-          </div>
+          <ExerciseContainer
+            exercises={exercises}
+            lessonId={lessonId}
+            onNext={onNext}
+          />
         )}
       </div>
     </div>

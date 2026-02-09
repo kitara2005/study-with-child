@@ -65,7 +65,9 @@ export default async function LessonPage({ params }: PageProps) {
       chapter: {
         include: { subject: true },
       },
-      exercises: true,
+      exercises: {
+        orderBy: { orderIndex: 'asc' },
+      },
       _count: {
         select: { exercises: true },
       },
@@ -112,7 +114,15 @@ export default async function LessonPage({ params }: PageProps) {
       {/* Lesson content tabs */}
       <LessonTabs
         theoryContent={theoryContent}
-        exerciseCount={lesson._count.exercises}
+        exercises={lesson.exercises}
+        lessonId={lesson.id}
+        onNext={
+          nextLesson
+            ? () => {
+                window.location.href = `/mon/${subjectSlug}/${chapterSlug}/${nextLesson.slug}`;
+              }
+            : undefined
+        }
       />
 
       {/* Next lesson button */}
