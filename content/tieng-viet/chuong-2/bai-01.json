@@ -1,0 +1,124 @@
+{
+  "subject": "tieng-viet",
+  "chapter": "chuong-2",
+  "title": "Đọc: Cây tre Việt Nam",
+  "slug": "bai-1",
+  "orderIndex": 1,
+  "theoryContent": {
+    "sections": [
+      {
+        "type": "heading",
+        "content": "Cây tre Việt Nam"
+      },
+      {
+        "type": "paragraph",
+        "content": "Tre là loài cây quen thuộc với người Việt Nam từ ngàn đời nay. Tre mọc thẳng, vươn cao, tượng trưng cho sự ngay thẳng và mạnh mẽ. Tre có mặt khắp nơi: rừng tre, hàng tre xanh quanh nhà, tre làm vật dụng..."
+      },
+      {
+        "type": "heading",
+        "content": "Đặc điểm cây tre"
+      },
+      {
+        "type": "paragraph",
+        "content": "Tre có thân thẳng, chia thành nhiều đốt. Lá tre nhỏ, màu xanh. Măng tre mọc từ dưới đất, mọc rất nhanh, có thể cao hàng mét chỉ trong vài tuần. Khi măng lớn lên, vỏ ngoài bong ra, thân tre cứng lại."
+      },
+      {
+        "type": "example",
+        "question": "Vì sao người ta nói 'măng mọc thẳng'?",
+        "solution": "Vì măng tre luôn mọc thẳng đứng, không cong queo. Đây là biểu tượng của sự ngay thẳng, chính trực trong tính cách con người."
+      },
+      {
+        "type": "heading",
+        "content": "Ý nghĩa của cây tre"
+      },
+      {
+        "type": "paragraph",
+        "content": "Người ta thường nói: 'Măng mọc thẳng' để so sánh với con người có tính cách thẳng thắn, không vòng vo, gian dối. Tre còn tượng trưng cho sự kiên cường: 'Cây tre trăm đốt là trăm lần kiên trung.'"
+      },
+      {
+        "type": "heading",
+        "content": "Công dụng của tre"
+      },
+      {
+        "type": "paragraph",
+        "content": "Tre được sử dụng rất nhiều trong đời sống: làm nhà, đồ gia dụng (rổ, rá, giỏ), nhạc cụ (sáo trúc), thực phẩm (măng). Tre còn bảo vệ nhà cửa, làm đẹp cảnh quan."
+      },
+      {
+        "type": "example",
+        "question": "Tại sao cây tre là biểu tượng của người Việt Nam?",
+        "solution": "Vì tre mọc thẳng (ngay thẳng), bền bỉ (kiên cường), luôn xanh tươi (bất khuất). Những phẩm chất này giống tính cách người Việt Nam: ngay thẳng, kiên cường, bất khuất trước khó khăn."
+      }
+    ],
+    "keyPoints": [
+      "Tre là biểu tượng của sự ngay thẳng và kiên cường",
+      "Măng mọc thẳng là hình ảnh về tính cách chính trực",
+      "Tre tượng trưng cho người Việt Nam mạnh mẽ, bất khuất",
+      "Tre có nhiều công dụng trong đời sống"
+    ]
+  },
+  "exercises": [
+    {
+      "type": "MULTIPLE_CHOICE",
+      "question": "Cây tre tượng trưng cho phẩm chất nào?",
+      "options": [
+        { "label": "A", "value": "Yếu đuối và mềm mại" },
+        { "label": "B", "value": "Ngay thẳng và kiên cường" },
+        { "label": "C", "value": "Gian dối và vòng vo" },
+        { "label": "D", "value": "Nhu nhược và dễ gãy" }
+      ],
+      "correctAnswer": "B",
+      "explanation": "Cây tre tượng trưng cho sự ngay thẳng (mọc thẳng) và kiên cường (bền, khó gãy).",
+      "orderIndex": 1
+    },
+    {
+      "type": "FILL_BLANK",
+      "question": "Người ta thường nói '... mọc thẳng' để so sánh với người ngay thẳng.",
+      "correctAnswer": "Măng",
+      "explanation": "'Măng mọc thẳng' là câu nói so sánh người có tính cách ngay thẳng, chính trực.",
+      "orderIndex": 2
+    },
+    {
+      "type": "TRUE_FALSE",
+      "question": "Măng tre mọc rất chậm, mất nhiều tháng mới cao. Đúng hay sai?",
+      "correctAnswer": "Sai",
+      "explanation": "Sai. Măng tre mọc rất nhanh, có thể cao hàng mét chỉ trong vài tuần.",
+      "orderIndex": 3
+    },
+    {
+      "type": "MULTIPLE_CHOICE",
+      "question": "Công dụng nào KHÔNG phải của cây tre?",
+      "options": [
+        { "label": "A", "value": "Làm nhà, đồ gia dụng" },
+        { "label": "B", "value": "Làm nhạc cụ (sáo trúc)" },
+        { "label": "C", "value": "Ăn măng" },
+        { "label": "D", "value": "Sản xuất nhựa" }
+      ],
+      "correctAnswer": "D",
+      "explanation": "Tre không dùng để sản xuất nhựa. Tre dùng làm nhà, đồ dùng, nhạc cụ, và măng ăn được.",
+      "orderIndex": 4
+    },
+    {
+      "type": "FILL_BLANK",
+      "question": "Câu thành ngữ: 'Cây tre trăm đốt là trăm lần ...'",
+      "correctAnswer": "kiên trung",
+      "explanation": "Câu thành ngữ: 'Cây tre trăm đốt là trăm lần kiên trung', nói về sự kiên cường, bất khuất.",
+      "orderIndex": 5
+    },
+    {
+      "type": "MULTIPLE_CHOICE",
+      "question": "Tại sao tre là biểu tượng của người Việt Nam?",
+      "options": [
+        { "label": "A", "value": "Vì tre mọc ở khắp nơi" },
+        { "label": "B", "value": "Vì tre có giá trị kinh tế cao" },
+        {
+          "label": "C",
+          "value": "Vì tre thể hiện tính ngay thẳng, kiên cường giống người Việt"
+        },
+        { "label": "D", "value": "Vì tre đẹp và cao" }
+      ],
+      "correctAnswer": "C",
+      "explanation": "Tre là biểu tượng vì thể hiện phẩm chất ngay thẳng, kiên cường, bất khuất - giống tính cách người Việt Nam.",
+      "orderIndex": 6
+    }
+  ]
+}

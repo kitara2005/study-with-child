@@ -1,0 +1,121 @@
+{
+  "subject": "toan",
+  "chapter": "chuong-2",
+  "title": "So sánh các số tự nhiên",
+  "slug": "bai-3",
+  "orderIndex": 3,
+  "theoryContent": {
+    "sections": [
+      {
+        "type": "heading",
+        "content": "Quy tắc so sánh số tự nhiên"
+      },
+      {
+        "type": "paragraph",
+        "content": "Để so sánh hai số tự nhiên, ta làm theo thứ tự: 1. So sánh số chữ số: số nào có nhiều chữ số hơn thì lớn hơn. 2. Nếu cùng số chữ số, so sánh từng chữ số từ trái sang phải."
+      },
+      {
+        "type": "heading",
+        "content": "So sánh số có nhiều chữ số khác nhau"
+      },
+      {
+        "type": "paragraph",
+        "content": "Số có nhiều chữ số hơn thì lớn hơn. Ví dụ: 1 000 > 999 vì 1 000 có 4 chữ số, còn 999 chỉ có 3 chữ số."
+      },
+      {
+        "type": "example",
+        "question": "So sánh: 12 345 và 987 654",
+        "solution": "987 654 > 12 345. Vì 987 654 có 6 chữ số, còn 12 345 chỉ có 5 chữ số. Số có nhiều chữ số hơn thì lớn hơn."
+      },
+      {
+        "type": "heading",
+        "content": "So sánh số có cùng số chữ số"
+      },
+      {
+        "type": "paragraph",
+        "content": "Nếu hai số có cùng số chữ số, ta so sánh từng chữ số từ trái sang phải. Chữ số nào lớn hơn trước thì số đó lớn hơn."
+      },
+      {
+        "type": "example",
+        "question": "So sánh: 345 678 và 345 876",
+        "solution": "Cùng 6 chữ số. Hai chữ số đầu giống nhau (3 và 4), chữ số thứ ba giống nhau (5). Chữ số thứ tư: 6 < 8, nên 345 678 < 345 876."
+      },
+      {
+        "type": "heading",
+        "content": "Sắp xếp các số theo thứ tự"
+      },
+      {
+        "type": "paragraph",
+        "content": "Sắp xếp tăng dần: từ bé đến lớn. Sắp xếp giảm dần: từ lớn đến bé. Áp dụng quy tắc so sánh để sắp xếp."
+      }
+    ],
+    "keyPoints": [
+      "Số có nhiều chữ số hơn thì lớn hơn",
+      "Cùng số chữ số: so sánh từ trái sang phải",
+      "Dừng ngay khi gặp chữ số khác nhau đầu tiên",
+      "Dùng dấu > (lớn hơn), < (bé hơn), = (bằng)"
+    ]
+  },
+  "exercises": [
+    {
+      "type": "MULTIPLE_CHOICE",
+      "question": "Điền dấu thích hợp: 456 789 ... 456 987",
+      "options": [
+        { "label": "A", "value": ">" },
+        { "label": "B", "value": "<" },
+        { "label": "C", "value": "=" },
+        { "label": "D", "value": "Không so sánh được" }
+      ],
+      "correctAnswer": "B",
+      "explanation": "456 789 < 456 987. Cùng 6 chữ số, ba chữ số đầu giống nhau. Chữ số thứ tư: 7 < 9, nên số thứ nhất bé hơn.",
+      "orderIndex": 1
+    },
+    {
+      "type": "FILL_BLANK",
+      "question": "Số nào lớn nhất trong các số: 89 456, 123 789, 98 765? Đáp án: ...",
+      "correctAnswer": "123789",
+      "explanation": "123 789 lớn nhất vì có 6 chữ số, hai số kia chỉ có 5 chữ số.",
+      "orderIndex": 2
+    },
+    {
+      "type": "TRUE_FALSE",
+      "question": "Số 999 999 lớn hơn số 1 000 000. Đúng hay sai?",
+      "correctAnswer": "Sai",
+      "explanation": "Sai. 999 999 < 1 000 000. Vì 999 999 có 6 chữ số, còn 1 000 000 có 7 chữ số.",
+      "orderIndex": 3
+    },
+    {
+      "type": "MULTIPLE_CHOICE",
+      "question": "Sắp xếp các số sau theo thứ tự tăng dần: 567, 5 678, 56, 5 067",
+      "options": [
+        { "label": "A", "value": "56, 567, 5 067, 5 678" },
+        { "label": "B", "value": "5 678, 5 067, 567, 56" },
+        { "label": "C", "value": "56, 5 067, 567, 5 678" },
+        { "label": "D", "value": "567, 56, 5 067, 5 678" }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Sắp xếp tăng dần (bé đến lớn): 56 (2 chữ số), 567 (3 chữ số), 5 067 và 5 678 (cùng 4 chữ số, so sánh: 5 067 < 5 678).",
+      "orderIndex": 4
+    },
+    {
+      "type": "FILL_BLANK",
+      "question": "Điền dấu: 78 345 ... 78 354",
+      "correctAnswer": "<",
+      "explanation": "78 345 < 78 354. Cùng 5 chữ số, ba chữ số đầu giống nhau. Chữ số thứ tư: 4 < 5.",
+      "orderIndex": 5
+    },
+    {
+      "type": "MULTIPLE_CHOICE",
+      "question": "Trong các số sau, số nào bé nhất: 234 567, 234 576, 243 567, 234 657?",
+      "options": [
+        { "label": "A", "value": "234 567" },
+        { "label": "B", "value": "234 576" },
+        { "label": "C", "value": "243 567" },
+        { "label": "D", "value": "234 657" }
+      ],
+      "correctAnswer": "A",
+      "explanation": "234 567 bé nhất. So sánh từ trái sang phải: 234 567 có chữ số thứ tư là 5 (nhỏ nhất), các số khác có 5, 3, hoặc 6.",
+      "orderIndex": 6
+    }
+  ]
+}

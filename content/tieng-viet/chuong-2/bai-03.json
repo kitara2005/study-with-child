@@ -1,0 +1,116 @@
+{
+  "subject": "tieng-viet",
+  "chapter": "chuong-2",
+  "title": "Đọc: Một người chính trực",
+  "slug": "bai-3",
+  "orderIndex": 3,
+  "theoryContent": {
+    "sections": [
+      {
+        "type": "heading",
+        "content": "Câu chuyện về ông Bảy Hiền"
+      },
+      {
+        "type": "paragraph",
+        "content": "Ông Bảy Hiền là một người nông dân nghèo nhưng rất chính trực. Mọi người trong làng đều kính trọng ông vì tính cách ngay thẳng, không bao giờ làm điều gian dối."
+      },
+      {
+        "type": "paragraph",
+        "content": "Một hôm, ông nhặt được một túi tiền lớn trên đường về nhà. Đó là một số tiền rất nhiều, đủ để gia đình ông sống khỏe trong nhiều năm. Nhưng ông không giữ lại, mà đứng đợi chủ nhân ở đó."
+      },
+      {
+        "type": "paragraph",
+        "content": "Sau một hồi, có một người đi tìm chạy đến, vẻ mặt lo lắng. Ông Bảy Hiền hỏi người đó mất gì, sau khi xác nhận đúng, ông trả lại túi tiền nguyên vẹn. Người đó cảm động, muốn cảm ơn bằng tiền nhưng ông từ chối."
+      },
+      {
+        "type": "example",
+        "question": "Tại sao ông Bảy Hiền không giữ túi tiền?",
+        "solution": "Vì ông là người chính trực, biết rõ đó không phải của mình. Dù nghèo nhưng ông không muốn lấy của người khác. Lương tâm trong sáng quan trọng hơn tiền bạc."
+      },
+      {
+        "type": "heading",
+        "content": "Ý nghĩa câu chuyện"
+      },
+      {
+        "type": "paragraph",
+        "content": "Câu chuyện dạy chúng ta: phải sống chính trực dù trong hoàn cảnh khó khăn; không lấy của người khác dù có cơ hội; lương tâm trong sáng quý giá hơn tiền bạc; người chính trực luôn được mọi người kính trọng."
+      },
+      {
+        "type": "heading",
+        "content": "Bài học về phẩm chất"
+      },
+      {
+        "type": "paragraph",
+        "content": "Phẩm chất chính trực thể hiện qua hành động cụ thể. Không phải nói suông mà phải làm. Trong tình huống khó khăn mới thấy rõ bản chất con người."
+      }
+    ],
+    "keyPoints": [
+      "Phải sống chính trực dù trong hoàn cảnh khó khăn",
+      "Không lấy của người khác dù có cơ hội",
+      "Lương tâm trong sáng quý giá hơn tiền bạc",
+      "Người chính trực luôn được mọi người kính trọng"
+    ]
+  },
+  "exercises": [
+    {
+      "type": "MULTIPLE_CHOICE",
+      "question": "Ông Bảy Hiền có nghề nghiệp gì?",
+      "options": [
+        { "label": "A", "value": "Thợ thủ công" },
+        { "label": "B", "value": "Nông dân" },
+        { "label": "C", "value": "Thương gia" },
+        { "label": "D", "value": "Giáo viên" }
+      ],
+      "correctAnswer": "B",
+      "explanation": "Ông Bảy Hiền là một người nông dân nghèo nhưng rất chính trực.",
+      "orderIndex": 1
+    },
+    {
+      "type": "FILL_BLANK",
+      "question": "Ông Bảy Hiền nhặt được một ... tiền lớn trên đường.",
+      "correctAnswer": "túi",
+      "explanation": "Ông nhặt được một túi tiền lớn, đủ để gia đình sống khỏe nhiều năm.",
+      "orderIndex": 2
+    },
+    {
+      "type": "TRUE_FALSE",
+      "question": "Ông Bảy Hiền giữ lại túi tiền vì gia đình nghèo. Đúng hay sai?",
+      "correctAnswer": "Sai",
+      "explanation": "Sai. Dù nghèo nhưng ông không giữ lại, mà trả lại cho người mất. Ông là người chính trực.",
+      "orderIndex": 3
+    },
+    {
+      "type": "MULTIPLE_CHOICE",
+      "question": "Ông Bảy Hiền làm gì sau khi nhặt được túi tiền?",
+      "options": [
+        { "label": "A", "value": "Mang về nhà giấu kỹ" },
+        { "label": "B", "value": "Đứng đợi chủ nhân ở đó" },
+        { "label": "C", "value": "Đem nộp công an" },
+        { "label": "D", "value": "Chia cho người nghèo" }
+      ],
+      "correctAnswer": "B",
+      "explanation": "Ông đứng đợi chủ nhân ở đó để trả lại túi tiền nguyên vẹn.",
+      "orderIndex": 4
+    },
+    {
+      "type": "FILL_BLANK",
+      "question": "Mọi người trong làng kính trọng ông vì tính cách ... của ông.",
+      "correctAnswer": "ngay thẳng",
+      "explanation": "Mọi người kính trọng ông Bảy Hiền vì tính cách ngay thẳng, chính trực.",
+      "orderIndex": 5
+    },
+    {
+      "type": "MULTIPLE_CHOICE",
+      "question": "Bài học chính của câu chuyện là gì?",
+      "options": [
+        { "label": "A", "value": "Tiền bạc quan trọng nhất" },
+        { "label": "B", "value": "Phải giàu mới được tôn trọng" },
+        { "label": "C", "value": "Lương tâm trong sáng quý giá hơn tiền bạc" },
+        { "label": "D", "value": "Người nghèo không cần chính trực" }
+      ],
+      "correctAnswer": "C",
+      "explanation": "Bài học chính: Lương tâm trong sáng quý giá hơn tiền bạc. Phải sống chính trực dù trong hoàn cảnh khó khăn.",
+      "orderIndex": 6
+    }
+  ]
+}

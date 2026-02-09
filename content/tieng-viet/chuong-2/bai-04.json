@@ -1,0 +1,132 @@
+{
+  "subject": "tieng-viet",
+  "chapter": "chuong-2",
+  "title": "Tập làm văn: Cấu tạo bài văn kể chuyện",
+  "slug": "bai-4",
+  "orderIndex": 4,
+  "theoryContent": {
+    "sections": [
+      {
+        "type": "heading",
+        "content": "Bài văn kể chuyện là gì?"
+      },
+      {
+        "type": "paragraph",
+        "content": "Bài văn kể chuyện là bài văn thuật lại một sự việc, câu chuyện đã xảy ra hoặc tưởng tượng. Mục đích: giải trí, giáo dục, truyền đạt bài học."
+      },
+      {
+        "type": "heading",
+        "content": "Cấu tạo bài văn kể chuyện"
+      },
+      {
+        "type": "paragraph",
+        "content": "Bài văn kể chuyện gồm 3 phần: 1. Mở bài: giới thiệu bối cảnh, nhân vật, thời gian, địa điểm. 2. Thân bài: kể sự việc theo thứ tự thời gian, có cao trào. 3. Kết bài: kết thúc câu chuyện, rút ra bài học hoặc cảm nghĩ."
+      },
+      {
+        "type": "heading",
+        "content": "Phần mở bài"
+      },
+      {
+        "type": "paragraph",
+        "content": "Mở bài ngắn gọn, giới thiệu: ai (nhân vật), khi nào (thời gian), ở đâu (địa điểm), việc gì (sự kiện). Ví dụ: 'Hôm qua, em đi chơi công viên với bố mẹ. Một chuyện thú vị đã xảy ra...'"
+      },
+      {
+        "type": "example",
+        "question": "Viết câu mở bài cho chuyện 'Lần đầu nấu cơm'",
+        "solution": "Ví dụ: 'Hôm Chủ nhật tuần trước, mẹ em bận, em quyết định tự nấu cơm cho gia đình. Đó là lần đầu tiên em làm việc này.'"
+      },
+      {
+        "type": "heading",
+        "content": "Phần thân bài"
+      },
+      {
+        "type": "paragraph",
+        "content": "Thân bài kể chi tiết sự việc theo thứ tự: trước, sau, rồi, cuối cùng. Mô tả hành động, cảm xúc của nhân vật. Có điểm cao trào (phần hấp dẫn nhất). Dùng đối thoại để sinh động."
+      },
+      {
+        "type": "heading",
+        "content": "Phần kết bài"
+      },
+      {
+        "type": "paragraph",
+        "content": "Kết bài tóm tắt kết quả, nêu cảm nghĩ hoặc bài học. Ví dụ: 'Qua chuyện này, em hiểu rằng... Em sẽ...'"
+      },
+      {
+        "type": "example",
+        "question": "Viết câu kết cho chuyện 'Giúp bạn học bài'",
+        "solution": "Ví dụ: 'Thấy bạn tiến bộ, em rất vui. Em hiểu rằng giúp đỡ người khác cũng là giúp mình trở nên tốt hơn.'"
+      }
+    ],
+    "keyPoints": [
+      "Bài văn kể chuyện gồm 3 phần: mở bài, thân bài, kết bài",
+      "Mở bài giới thiệu bối cảnh, nhân vật",
+      "Thân bài kể chi tiết theo thứ tự thời gian",
+      "Kết bài nêu cảm nghĩ hoặc bài học"
+    ]
+  },
+  "exercises": [
+    {
+      "type": "MULTIPLE_CHOICE",
+      "question": "Bài văn kể chuyện gồm mấy phần?",
+      "options": [
+        { "label": "A", "value": "2 phần" },
+        { "label": "B", "value": "3 phần" },
+        { "label": "C", "value": "4 phần" },
+        { "label": "D", "value": "5 phần" }
+      ],
+      "correctAnswer": "B",
+      "explanation": "Bài văn kể chuyện gồm 3 phần: mở bài, thân bài, kết bài.",
+      "orderIndex": 1
+    },
+    {
+      "type": "FILL_BLANK",
+      "question": "Phần ... giới thiệu bối cảnh, nhân vật, thời gian, địa điểm.",
+      "correctAnswer": "mở bài",
+      "explanation": "Phần mở bài giới thiệu bối cảnh, nhân vật, thời gian, địa điểm của câu chuyện.",
+      "orderIndex": 2
+    },
+    {
+      "type": "TRUE_FALSE",
+      "question": "Thân bài nên kể sự việc theo thứ tự thời gian. Đúng hay sai?",
+      "correctAnswer": "Đúng",
+      "explanation": "Đúng. Thân bài kể chi tiết sự việc theo thứ tự thời gian: trước, sau, rồi, cuối cùng.",
+      "orderIndex": 3
+    },
+    {
+      "type": "MULTIPLE_CHOICE",
+      "question": "Phần nào của bài văn nêu bài học hoặc cảm nghĩ?",
+      "options": [
+        { "label": "A", "value": "Mở bài" },
+        { "label": "B", "value": "Thân bài" },
+        { "label": "C", "value": "Kết bài" },
+        { "label": "D", "value": "Tựa đề" }
+      ],
+      "correctAnswer": "C",
+      "explanation": "Kết bài tóm tắt kết quả, nêu cảm nghĩ hoặc bài học rút ra từ câu chuyện.",
+      "orderIndex": 4
+    },
+    {
+      "type": "FILL_BLANK",
+      "question": "Trong thân bài, phần hấp dẫn nhất gọi là điểm ...",
+      "correctAnswer": "cao trào",
+      "explanation": "Điểm cao trào là phần hấp dẫn nhất, quan trọng nhất trong câu chuyện.",
+      "orderIndex": 5
+    },
+    {
+      "type": "MULTIPLE_CHOICE",
+      "question": "Câu nào phù hợp làm mở bài?",
+      "options": [
+        { "label": "A", "value": "Qua chuyện này, em hiểu được nhiều điều" },
+        {
+          "label": "B",
+          "value": "Hôm qua, em đi học về gặp một chuyện thú vị"
+        },
+        { "label": "C", "value": "Em rất vui vì đã giúp được bạn" },
+        { "label": "D", "value": "Và thế là câu chuyện kết thúc" }
+      ],
+      "correctAnswer": "B",
+      "explanation": "Câu B phù hợp làm mở bài vì giới thiệu thời gian (hôm qua) và sự kiện (gặp chuyện thú vị).",
+      "orderIndex": 6
+    }
+  ]
+}

@@ -1,0 +1,113 @@
+{
+  "subject": "toan",
+  "chapter": "chuong-1",
+  "title": "Tính chất giao hoán của phép cộng",
+  "slug": "bai-3",
+  "orderIndex": 3,
+  "theoryContent": {
+    "sections": [
+      {
+        "type": "heading",
+        "content": "Tính chất giao hoán là gì?"
+      },
+      {
+        "type": "paragraph",
+        "content": "Tính chất giao hoán của phép cộng là: khi đổi chỗ các số hạng, tổng không thay đổi. Công thức: a + b = b + a."
+      },
+      {
+        "type": "example",
+        "question": "Chứng minh: 5 + 3 = 3 + 5",
+        "solution": "5 + 3 = 8 và 3 + 5 = 8. Vậy 5 + 3 = 3 + 5. Đổi chỗ hai số hạng nhưng tổng vẫn bằng nhau."
+      },
+      {
+        "type": "heading",
+        "content": "Ứng dụng tính chất giao hoán"
+      },
+      {
+        "type": "paragraph",
+        "content": "Tính chất giao hoán giúp ta tính toán linh hoạt hơn. Ta có thể đổi chỗ các số để tính thuận tiện hơn, đặc biệt khi tính nhẩm."
+      },
+      {
+        "type": "example",
+        "question": "Tính nhanh: 37 + 128 + 63",
+        "solution": "Ta nhận thấy 37 + 63 = 100. Áp dụng tính chất giao hoán: 37 + 128 + 63 = (37 + 63) + 128 = 100 + 128 = 228. Cách này tính nhanh hơn nhiều!"
+      },
+      {
+        "type": "heading",
+        "content": "Ghi nhớ"
+      },
+      {
+        "type": "paragraph",
+        "content": "Khi cộng nhiều số, ta có thể đổi chỗ các số hạng sao cho dễ tính nhất. Thường là ghép các số có tổng tròn chục, tròn trăm với nhau trước."
+      }
+    ],
+    "keyPoints": [
+      "Đổi chỗ các số hạng, tổng không đổi: a + b = b + a",
+      "Giúp tính toán nhanh và linh hoạt hơn",
+      "Thường ghép các số có tổng tròn chục, tròn trăm",
+      "Áp dụng cho cả phép cộng nhiều số hạng"
+    ]
+  },
+  "exercises": [
+    {
+      "type": "MULTIPLE_CHOICE",
+      "question": "Điền dấu thích hợp: 15 + 20 ... 20 + 15",
+      "options": [
+        { "label": "A", "value": ">" },
+        { "label": "B", "value": "<" },
+        { "label": "C", "value": "=" },
+        { "label": "D", "value": "≠" }
+      ],
+      "correctAnswer": "C",
+      "explanation": "15 + 20 = 20 + 15 = 35. Theo tính chất giao hoán, đổi chỗ các số hạng thì tổng không đổi.",
+      "orderIndex": 1
+    },
+    {
+      "type": "FILL_BLANK",
+      "question": "Áp dụng tính chất giao hoán: 45 + 87 = 87 + ...",
+      "correctAnswer": "45",
+      "explanation": "Theo tính chất giao hoán: 45 + 87 = 87 + 45.",
+      "orderIndex": 2
+    },
+    {
+      "type": "TRUE_FALSE",
+      "question": "Tính chất giao hoán cho phép ta đổi chỗ các số hạng. Đúng hay sai?",
+      "correctAnswer": "Đúng",
+      "explanation": "Đúng. Tính chất giao hoán của phép cộng cho phép đổi chỗ các số hạng mà tổng không thay đổi.",
+      "orderIndex": 3
+    },
+    {
+      "type": "MULTIPLE_CHOICE",
+      "question": "Tính nhanh: 25 + 47 + 75. Cách nào hợp lý nhất?",
+      "options": [
+        { "label": "A", "value": "Cộng theo thứ tự từ trái sang phải" },
+        { "label": "B", "value": "Cộng 25 + 75 trước, rồi cộng 47" },
+        { "label": "C", "value": "Cộng 47 + 75 trước, rồi cộng 25" },
+        { "label": "D", "value": "Không thể đổi thứ tự" }
+      ],
+      "correctAnswer": "B",
+      "explanation": "Cộng 25 + 75 = 100 trước (tròn trăm), rồi cộng 47: 100 + 47 = 147. Đây là cách tính nhanh nhất nhờ tính chất giao hoán.",
+      "orderIndex": 4
+    },
+    {
+      "type": "FILL_BLANK",
+      "question": "Tính nhanh: 88 + 136 + 12 = ...",
+      "correctAnswer": "236",
+      "explanation": "Ghép 88 + 12 = 100, sau đó: 100 + 136 = 236. Sử dụng tính chất giao hoán để tính nhanh.",
+      "orderIndex": 5
+    },
+    {
+      "type": "MULTIPLE_CHOICE",
+      "question": "Theo tính chất giao hoán, 234 + 567 bằng?",
+      "options": [
+        { "label": "A", "value": "567 - 234" },
+        { "label": "B", "value": "567 + 234" },
+        { "label": "C", "value": "234 - 567" },
+        { "label": "D", "value": "567 × 234" }
+      ],
+      "correctAnswer": "B",
+      "explanation": "Theo tính chất giao hoán: 234 + 567 = 567 + 234. Đổi chỗ hai số hạng.",
+      "orderIndex": 6
+    }
+  ]
+}

@@ -1,0 +1,121 @@
+{
+  "subject": "toan",
+  "chapter": "chuong-2",
+  "title": "Viết số tự nhiên trong hệ thập phân",
+  "slug": "bai-4",
+  "orderIndex": 4,
+  "theoryContent": {
+    "sections": [
+      {
+        "type": "heading",
+        "content": "Hệ thập phân là gì?"
+      },
+      {
+        "type": "paragraph",
+        "content": "Hệ thập phân là hệ đếm cơ số 10, sử dụng 10 chữ số: 0, 1, 2, 3, 4, 5, 6, 7, 8, 9. Giá trị của mỗi chữ số phụ thuộc vào vị trí của nó."
+      },
+      {
+        "type": "heading",
+        "content": "Bảng giá trị các hàng"
+      },
+      {
+        "type": "paragraph",
+        "content": "Từ phải sang trái: hàng đơn vị (×1), hàng chục (×10), hàng trăm (×100), hàng nghìn (×1000), hàng chục nghìn (×10000), hàng trăm nghìn (×100000), hàng triệu (×1000000)."
+      },
+      {
+        "type": "example",
+        "question": "Phân tích số 3 456 theo hệ thập phân",
+        "solution": "3 456 = 3 × 1000 + 4 × 100 + 5 × 10 + 6 × 1 = 3000 + 400 + 50 + 6. Chữ số 3 ở hàng nghìn, 4 ở hàng trăm, 5 ở hàng chục, 6 ở hàng đơn vị."
+      },
+      {
+        "type": "heading",
+        "content": "Viết số dưới dạng tổng"
+      },
+      {
+        "type": "paragraph",
+        "content": "Mỗi số tự nhiên có thể viết thành tổng của các giá trị theo từng hàng. Ví dụ: 5 207 = 5000 + 200 + 0 + 7."
+      },
+      {
+        "type": "example",
+        "question": "Viết số 28 345 dưới dạng tổng",
+        "solution": "28 345 = 20000 + 8000 + 300 + 40 + 5 = 2 × 10000 + 8 × 1000 + 3 × 100 + 4 × 10 + 5 × 1."
+      },
+      {
+        "type": "heading",
+        "content": "Tầm quan trọng"
+      },
+      {
+        "type": "paragraph",
+        "content": "Hiểu hệ thập phân giúp ta: đọc và viết số chính xác, so sánh các số, thực hiện phép tính nhanh hơn, làm tròn số."
+      }
+    ],
+    "keyPoints": [
+      "Hệ thập phân sử dụng 10 chữ số: 0-9",
+      "Giá trị chữ số phụ thuộc vị trí (hàng)",
+      "Mỗi hàng gấp 10 lần hàng bên phải",
+      "Số = tổng giá trị các chữ số theo từng hàng"
+    ]
+  },
+  "exercises": [
+    {
+      "type": "MULTIPLE_CHOICE",
+      "question": "Trong số 4 567, chữ số 5 thuộc hàng nào?",
+      "options": [
+        { "label": "A", "value": "Hàng đơn vị" },
+        { "label": "B", "value": "Hàng chục" },
+        { "label": "C", "value": "Hàng trăm" },
+        { "label": "D", "value": "Hàng nghìn" }
+      ],
+      "correctAnswer": "C",
+      "explanation": "Chữ số 5 ở vị trí thứ 2 từ trái sang phải, thuộc hàng trăm, có giá trị 500.",
+      "orderIndex": 1
+    },
+    {
+      "type": "FILL_BLANK",
+      "question": "Viết số 7 000 + 300 + 40 + 5 dưới dạng số tự nhiên: ...",
+      "correctAnswer": "7345",
+      "explanation": "7 000 + 300 + 40 + 5 = 7 345.",
+      "orderIndex": 2
+    },
+    {
+      "type": "MULTIPLE_CHOICE",
+      "question": "Phân tích số 2 803 theo hệ thập phân",
+      "options": [
+        { "label": "A", "value": "2 × 1000 + 8 × 100 + 3 × 1" },
+        { "label": "B", "value": "2 × 1000 + 8 × 10 + 3 × 1" },
+        { "label": "C", "value": "2 × 100 + 8 × 10 + 3 × 1" },
+        { "label": "D", "value": "2 × 1000 + 8 × 100 + 3 × 10" }
+      ],
+      "correctAnswer": "A",
+      "explanation": "2 803 = 2 × 1000 + 8 × 100 + 0 × 10 + 3 × 1 = 2000 + 800 + 3.",
+      "orderIndex": 3
+    },
+    {
+      "type": "TRUE_FALSE",
+      "question": "Trong hệ thập phân, mỗi hàng gấp 10 lần hàng bên phải. Đúng hay sai?",
+      "correctAnswer": "Đúng",
+      "explanation": "Đúng. Hàng chục = 10 × hàng đơn vị, hàng trăm = 10 × hàng chục, hàng nghìn = 10 × hàng trăm...",
+      "orderIndex": 4
+    },
+    {
+      "type": "FILL_BLANK",
+      "question": "Trong số 56 789, chữ số 6 có giá trị là ...",
+      "correctAnswer": "6000",
+      "explanation": "Chữ số 6 ở hàng nghìn, có giá trị 6 × 1000 = 6 000.",
+      "orderIndex": 5
+    },
+    {
+      "type": "MULTIPLE_CHOICE",
+      "question": "Số nào bằng 3 × 10000 + 5 × 100 + 7?",
+      "options": [
+        { "label": "A", "value": "3 507" },
+        { "label": "B", "value": "30 507" },
+        { "label": "C", "value": "35 007" },
+        { "label": "D", "value": "30 057" }
+      ],
+      "correctAnswer": "B",
+      "explanation": "3 × 10000 + 5 × 100 + 7 = 30000 + 500 + 7 = 30 507.",
+      "orderIndex": 6
+    }
+  ]
+}

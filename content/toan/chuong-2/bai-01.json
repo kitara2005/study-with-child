@@ -1,0 +1,113 @@
+{
+  "subject": "toan",
+  "chapter": "chuong-2",
+  "title": "Số lớn hơn 100 000",
+  "slug": "bai-1",
+  "orderIndex": 1,
+  "theoryContent": {
+    "sections": [
+      {
+        "type": "heading",
+        "content": "Số có 6 chữ số"
+      },
+      {
+        "type": "paragraph",
+        "content": "Sau số 99 999 là số 100 000 (một trăm nghìn). Đây là số nhỏ nhất có 6 chữ số. Số lớn nhất có 6 chữ số là 999 999 (chín trăm chín mươi chín nghìn, chín trăm chín mươi chín)."
+      },
+      {
+        "type": "heading",
+        "content": "Cách đọc số có 6 chữ số"
+      },
+      {
+        "type": "paragraph",
+        "content": "Ta đọc từ trái sang phải. Ba chữ số bên trái là hàng nghìn, ba chữ số bên phải là hàng đơn vị. Ví dụ: 345 678 đọc là ba trăm bốn mươi lăm nghìn, sáu trăm bảy mươi tám."
+      },
+      {
+        "type": "example",
+        "question": "Đọc số: 456 789",
+        "solution": "Bốn trăm năm mươi sáu nghìn, bảy trăm tám mươi chín. Chú ý: 456 là phần nghìn, 789 là phần đơn vị."
+      },
+      {
+        "type": "heading",
+        "content": "Giá trị của các chữ số"
+      },
+      {
+        "type": "paragraph",
+        "content": "Trong số 345 678: chữ số 3 có giá trị 300 000 (ba trăm nghìn), chữ số 4 có giá trị 40 000 (bốn mươi nghìn), chữ số 5 có giá trị 5 000 (năm nghìn), chữ số 6 có giá trị 600 (sáu trăm), chữ số 7 có giá trị 70 (bảy mươi), chữ số 8 có giá trị 8 (tám đơn vị)."
+      },
+      {
+        "type": "example",
+        "question": "Trong số 523 410, chữ số 2 có giá trị bao nhiêu?",
+        "solution": "Chữ số 2 ở hàng chục nghìn, có giá trị là 20 000 (hai mươi nghìn)."
+      }
+    ],
+    "keyPoints": [
+      "Số có 6 chữ số nhỏ nhất là 100 000",
+      "Số có 6 chữ số lớn nhất là 999 999",
+      "Mỗi chữ số có giá trị khác nhau tùy vào vị trí",
+      "Đọc theo nhóm: phần nghìn và phần đơn vị"
+    ]
+  },
+  "exercises": [
+    {
+      "type": "MULTIPLE_CHOICE",
+      "question": "Số nhỏ nhất có 6 chữ số là?",
+      "options": [
+        { "label": "A", "value": "99 999" },
+        { "label": "B", "value": "100 000" },
+        { "label": "C", "value": "999 999" },
+        { "label": "D", "value": "1 000 000" }
+      ],
+      "correctAnswer": "B",
+      "explanation": "Số nhỏ nhất có 6 chữ số là 100 000. Số 99 999 chỉ có 5 chữ số.",
+      "orderIndex": 1
+    },
+    {
+      "type": "FILL_BLANK",
+      "question": "Viết số: Hai trăm ba mươi nghìn, bốn trăm năm mươi sáu. Đáp án: ...",
+      "correctAnswer": "230456",
+      "explanation": "Hai trăm ba mươi nghìn = 230 000, bốn trăm năm mươi sáu = 456. Tổng: 230 456.",
+      "orderIndex": 2
+    },
+    {
+      "type": "MULTIPLE_CHOICE",
+      "question": "Trong số 678 345, chữ số 7 có giá trị?",
+      "options": [
+        { "label": "A", "value": "7" },
+        { "label": "B", "value": "70" },
+        { "label": "C", "value": "700" },
+        { "label": "D", "value": "70 000" }
+      ],
+      "correctAnswer": "D",
+      "explanation": "Chữ số 7 ở hàng chục nghìn, có giá trị 70 000 (bảy mươi nghìn).",
+      "orderIndex": 3
+    },
+    {
+      "type": "TRUE_FALSE",
+      "question": "Số 999 999 là số lớn nhất có 6 chữ số. Đúng hay sai?",
+      "correctAnswer": "Đúng",
+      "explanation": "Đúng. 999 999 là số lớn nhất có 6 chữ số. Số tiếp theo là 1 000 000 có 7 chữ số.",
+      "orderIndex": 4
+    },
+    {
+      "type": "FILL_BLANK",
+      "question": "Đọc số 405 067: Bốn trăm ... nghìn, ... sáu mươi bảy",
+      "correctAnswer": "lăm, không trăm",
+      "explanation": "Đọc là: Bốn trăm lăm nghìn, không trăm sáu mươi bảy. Chữ số 0 ở hàng trăm đọc là 'không trăm'.",
+      "orderIndex": 5
+    },
+    {
+      "type": "MULTIPLE_CHOICE",
+      "question": "Số nào sau đây lớn nhất?",
+      "options": [
+        { "label": "A", "value": "567 890" },
+        { "label": "B", "value": "576 890" },
+        { "label": "C", "value": "567 980" },
+        { "label": "D", "value": "567 809" }
+      ],
+      "correctAnswer": "B",
+      "explanation": "576 890 lớn nhất vì chữ số hàng chục nghìn (7) lớn hơn chữ số hàng chục nghìn của các số khác (6).",
+      "orderIndex": 6
+    }
+  ]
+}

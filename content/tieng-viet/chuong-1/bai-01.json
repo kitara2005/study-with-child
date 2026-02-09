@@ -1,0 +1,115 @@
+{
+  "subject": "tieng-viet",
+  "chapter": "chuong-1",
+  "title": "Đọc: Sợ ai, sợ chính mình",
+  "slug": "bai-1",
+  "orderIndex": 1,
+  "theoryContent": {
+    "sections": [
+      {
+        "type": "heading",
+        "content": "Bài đọc: Sợ ai, sợ chính mình"
+      },
+      {
+        "type": "paragraph",
+        "content": "Có một anh chàng luôn lo lắng về những gì người khác nghĩ về mình. Anh ta sợ bị chê cười, sợ làm sai, sợ không được mọi người yêu quý. Mỗi khi làm việc gì, anh đều nghĩ: 'Người ta sẽ nói gì về mình nhỉ?'"
+      },
+      {
+        "type": "paragraph",
+        "content": "Một hôm, người thầy khôn ngoan nói với anh: 'Đừng sợ người khác, hãy sợ chính mình. Nếu mình làm điều tốt, ai cũng kính trọng. Còn nếu mình làm điều xấu thì dù có giấu cũng không ai quý.'"
+      },
+      {
+        "type": "heading",
+        "content": "Ý nghĩa câu chuyện"
+      },
+      {
+        "type": "paragraph",
+        "content": "Câu chuyện dạy chúng ta: Hãy sống thật với chính mình. Làm điều tốt không cần ngại người ta biết. Làm điều xấu thì phải hổ thẹn với chính mình trước hết. Quan trọng nhất là lương tâm trong sáng."
+      },
+      {
+        "type": "example",
+        "question": "Tại sao người thầy nói 'sợ chính mình' chứ không phải 'sợ người khác'?",
+        "solution": "Vì người khác chỉ nhìn bên ngoài, còn chính mình biết rõ mình làm gì, đúng hay sai. Nếu làm điều xấu, dù người khác không biết, lương tâm mình vẫn không yên."
+      },
+      {
+        "type": "heading",
+        "content": "Bài học rút ra"
+      },
+      {
+        "type": "paragraph",
+        "content": "Không nên quá lo lắng về ý kiến của người khác. Làm việc tốt, lương tâm trong sáng là điều quan trọng nhất. Phải tự trọng và tôn trọng chính mình. Hãy là người có trách nhiệm với hành động của mình."
+      }
+    ],
+    "keyPoints": [
+      "Không nên quá lo lắng về ý kiến của người khác",
+      "Làm việc tốt, lương tâm trong sáng là điều quan trọng nhất",
+      "Phải tự trọng và tôn trọng chính mình",
+      "Hành động của mình phải làm cho chính mình tự hào"
+    ]
+  },
+  "exercises": [
+    {
+      "type": "MULTIPLE_CHOICE",
+      "question": "Anh chàng trong câu chuyện sợ điều gì nhất?",
+      "options": [
+        { "label": "A", "value": "Sợ người thầy" },
+        { "label": "B", "value": "Sợ ý kiến của người khác" },
+        { "label": "C", "value": "Sợ làm việc nặng" },
+        { "label": "D", "value": "Sợ chính mình" }
+      ],
+      "correctAnswer": "B",
+      "explanation": "Anh chàng sợ ý kiến của người khác, sợ bị chê cười, sợ không được yêu quý. Đây là điều anh lo lắng nhất.",
+      "orderIndex": 1
+    },
+    {
+      "type": "FILL_BLANK",
+      "question": "Theo người thầy, điều quan trọng nhất là ... trong sáng.",
+      "correctAnswer": "lương tâm",
+      "explanation": "Người thầy dạy rằng điều quan trọng nhất là lương tâm trong sáng, làm việc tốt không hổ thẹn với chính mình.",
+      "orderIndex": 2
+    },
+    {
+      "type": "TRUE_FALSE",
+      "question": "Câu chuyện dạy chúng ta nên sống thật với chính mình. Đúng hay sai?",
+      "correctAnswer": "Đúng",
+      "explanation": "Đúng. Câu chuyện dạy ta hãy sống thật với chính mình, làm điều tốt không cần ngại người ta biết.",
+      "orderIndex": 3
+    },
+    {
+      "type": "MULTIPLE_CHOICE",
+      "question": "Ý nghĩa của câu 'Sợ chính mình' là gì?",
+      "options": [
+        { "label": "A", "value": "Sợ hình ảnh của mình trong gương" },
+        {
+          "label": "B",
+          "value": "Sợ lương tâm mình không yên nếu làm điều xấu"
+        },
+        { "label": "C", "value": "Sợ mình yếu đuối" },
+        { "label": "D", "value": "Sợ mình không giỏi bằng người khác" }
+      ],
+      "correctAnswer": "B",
+      "explanation": "Sợ chính mình nghĩa là sợ lương tâm mình không yên nếu làm điều xấu. Phải tự trọng và có trách nhiệm với hành động của mình.",
+      "orderIndex": 4
+    },
+    {
+      "type": "FILL_BLANK",
+      "question": "Nếu làm điều tốt, ai cũng ... mình.",
+      "correctAnswer": "kính trọng",
+      "explanation": "Người thầy nói: Nếu mình làm điều tốt, ai cũng kính trọng mình.",
+      "orderIndex": 5
+    },
+    {
+      "type": "MULTIPLE_CHOICE",
+      "question": "Bài học nào KHÔNG phải là ý nghĩa của câu chuyện?",
+      "options": [
+        { "label": "A", "value": "Phải tự trọng và tôn trọng chính mình" },
+        { "label": "B", "value": "Lương tâm trong sáng là quan trọng nhất" },
+        { "label": "C", "value": "Phải làm theo ý kiến của mọi người" },
+        { "label": "D", "value": "Không nên quá lo lắng về ý kiến người khác" }
+      ],
+      "correctAnswer": "C",
+      "explanation": "Đáp án C sai. Câu chuyện không dạy ta làm theo ý kiến của mọi người, mà dạy ta sống thật với chính mình và làm điều tốt.",
+      "orderIndex": 6
+    }
+  ]
+}

@@ -1,0 +1,113 @@
+{
+  "subject": "toan",
+  "chapter": "chuong-1",
+  "title": "Bảng nhân, bảng chia",
+  "slug": "bai-1",
+  "orderIndex": 1,
+  "theoryContent": {
+    "sections": [
+      {
+        "type": "heading",
+        "content": "Ôn tập bảng nhân và bảng chia"
+      },
+      {
+        "type": "paragraph",
+        "content": "Bảng nhân và bảng chia là kiến thức cơ bản quan trọng trong toán học. Chúng ta đã học từ lớp 2 và lớp 3, hôm nay chúng ta sẽ ôn tập lại để làm nền tảng cho những phép tính khó hơn."
+      },
+      {
+        "type": "heading",
+        "content": "Bảng nhân"
+      },
+      {
+        "type": "paragraph",
+        "content": "Bảng nhân là phép tính lấy một số nhân với các số từ 1 đến 10. Ví dụ: 2 × 3 = 6, nghĩa là lấy số 2 cộng với chính nó 3 lần. Phép nhân giúp chúng ta tính nhanh hơn phép cộng nhiều lần."
+      },
+      {
+        "type": "example",
+        "question": "Tính: 7 × 8 = ?",
+        "solution": "7 × 8 = 56. Ta có thể tính bằng cách cộng số 7 với chính nó 8 lần: 7 + 7 + 7 + 7 + 7 + 7 + 7 + 7 = 56. Nhưng nếu thuộc bảng nhân thì tính nhanh hơn rất nhiều."
+      },
+      {
+        "type": "heading",
+        "content": "Bảng chia"
+      },
+      {
+        "type": "paragraph",
+        "content": "Bảng chia là phép tính ngược lại của phép nhân. Nếu biết 7 × 8 = 56, thì ta có: 56 : 7 = 8 hoặc 56 : 8 = 7. Phép chia giúp ta chia đều một số lượng thành các phần bằng nhau."
+      },
+      {
+        "type": "example",
+        "question": "Tính: 48 : 6 = ?",
+        "solution": "48 : 6 = 8. Vì 6 × 8 = 48. Ta có thể kiểm tra lại bằng cách nhân kết quả với số chia: 8 × 6 = 48, đúng rồi!"
+      }
+    ],
+    "keyPoints": [
+      "Bảng nhân là phép tính cộng lặp lại một số nhiều lần",
+      "Bảng chia là phép tính ngược của phép nhân",
+      "Cần thuộc bảng nhân từ 2 đến 9 để tính nhanh",
+      "Có thể kiểm tra phép chia bằng cách nhân ngược lại"
+    ]
+  },
+  "exercises": [
+    {
+      "type": "MULTIPLE_CHOICE",
+      "question": "Tính: 6 × 7 = ?",
+      "options": [
+        { "label": "A", "value": "40" },
+        { "label": "B", "value": "42" },
+        { "label": "C", "value": "48" },
+        { "label": "D", "value": "56" }
+      ],
+      "correctAnswer": "B",
+      "explanation": "6 × 7 = 42. Ta có thể tính bằng cách cộng 6 với chính nó 7 lần: 6 + 6 + 6 + 6 + 6 + 6 + 6 = 42, hoặc nhớ trong bảng nhân 6.",
+      "orderIndex": 1
+    },
+    {
+      "type": "MULTIPLE_CHOICE",
+      "question": "Tính: 48 : 6 = ?",
+      "options": [
+        { "label": "A", "value": "6" },
+        { "label": "B", "value": "7" },
+        { "label": "C", "value": "8" },
+        { "label": "D", "value": "9" }
+      ],
+      "correctAnswer": "C",
+      "explanation": "48 : 6 = 8. Vì 6 × 8 = 48. Phép chia là phép tính ngược của phép nhân.",
+      "orderIndex": 2
+    },
+    {
+      "type": "FILL_BLANK",
+      "question": "Điền số thích hợp vào chỗ trống: 9 × ... = 63",
+      "correctAnswer": "7",
+      "explanation": "9 × 7 = 63. Ta có thể tính bằng phép chia ngược lại: 63 : 9 = 7.",
+      "orderIndex": 3
+    },
+    {
+      "type": "TRUE_FALSE",
+      "question": "Phép chia là phép tính ngược của phép nhân. Đúng hay sai?",
+      "correctAnswer": "Đúng",
+      "explanation": "Đúng. Phép chia là phép toán ngược của phép nhân. Ví dụ: nếu 5 × 4 = 20, thì 20 : 5 = 4 và 20 : 4 = 5.",
+      "orderIndex": 4
+    },
+    {
+      "type": "MULTIPLE_CHOICE",
+      "question": "Tính: 81 : 9 = ?",
+      "options": [
+        { "label": "A", "value": "7" },
+        { "label": "B", "value": "8" },
+        { "label": "C", "value": "9" },
+        { "label": "D", "value": "10" }
+      ],
+      "correctAnswer": "C",
+      "explanation": "81 : 9 = 9. Vì 9 × 9 = 81. Đây là một phép tính đặc biệt trong bảng nhân 9.",
+      "orderIndex": 5
+    },
+    {
+      "type": "FILL_BLANK",
+      "question": "Điền số thích hợp: 8 × 6 = ...",
+      "correctAnswer": "48",
+      "explanation": "8 × 6 = 48. Ta có thể tính: 8 + 8 + 8 + 8 + 8 + 8 = 48, hoặc nhớ trong bảng nhân 8.",
+      "orderIndex": 6
+    }
+  ]
+}

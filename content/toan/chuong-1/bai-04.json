@@ -1,0 +1,113 @@
+{
+  "subject": "toan",
+  "chapter": "chuong-1",
+  "title": "Tính chất kết hợp của phép cộng",
+  "slug": "bai-4",
+  "orderIndex": 4,
+  "theoryContent": {
+    "sections": [
+      {
+        "type": "heading",
+        "content": "Tính chất kết hợp là gì?"
+      },
+      {
+        "type": "paragraph",
+        "content": "Tính chất kết hợp của phép cộng là: khi cộng ba số, ta có thể cộng hai số trước rồi cộng với số thứ ba, hoặc cộng số thứ nhất với tổng của hai số sau. Công thức: (a + b) + c = a + (b + c)."
+      },
+      {
+        "type": "example",
+        "question": "Chứng minh: (5 + 3) + 7 = 5 + (3 + 7)",
+        "solution": "Vế trái: (5 + 3) + 7 = 8 + 7 = 15. Vế phải: 5 + (3 + 7) = 5 + 10 = 15. Vậy (5 + 3) + 7 = 5 + (3 + 7) = 15."
+      },
+      {
+        "type": "heading",
+        "content": "Ứng dụng tính chất kết hợp"
+      },
+      {
+        "type": "paragraph",
+        "content": "Tính chất kết hợp giúp ta nhóm các số sao cho tính toán thuận tiện nhất. Thường kết hợp với tính chất giao hoán để tính nhanh."
+      },
+      {
+        "type": "example",
+        "question": "Tính nhanh: 17 + 28 + 3",
+        "solution": "Ta nhận thấy 17 + 3 = 20. Áp dụng tính chất giao hoán và kết hợp: 17 + 28 + 3 = 17 + 3 + 28 = (17 + 3) + 28 = 20 + 28 = 48."
+      },
+      {
+        "type": "heading",
+        "content": "Kết hợp hai tính chất"
+      },
+      {
+        "type": "paragraph",
+        "content": "Trong thực tế, ta thường kết hợp cả tính chất giao hoán và kết hợp. Đầu tiên đổi chỗ các số (giao hoán), sau đó nhóm lại (kết hợp) để tính thuận tiện."
+      }
+    ],
+    "keyPoints": [
+      "Cộng ba số: (a + b) + c = a + (b + c)",
+      "Có thể nhóm các số theo cách khác nhau",
+      "Kết hợp với tính chất giao hoán để tính nhanh",
+      "Thường nhóm các số có tổng tròn chục, tròn trăm"
+    ]
+  },
+  "exercises": [
+    {
+      "type": "MULTIPLE_CHOICE",
+      "question": "Áp dụng tính chất kết hợp, (12 + 8) + 20 bằng?",
+      "options": [
+        { "label": "A", "value": "12 + (8 + 20)" },
+        { "label": "B", "value": "12 + 8 - 20" },
+        { "label": "C", "value": "(12 - 8) + 20" },
+        { "label": "D", "value": "12 × 8 + 20" }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Theo tính chất kết hợp: (12 + 8) + 20 = 12 + (8 + 20). Cả hai cách đều cho kết quả 40.",
+      "orderIndex": 1
+    },
+    {
+      "type": "FILL_BLANK",
+      "question": "Tính nhanh: 45 + 19 + 5 = ...",
+      "correctAnswer": "69",
+      "explanation": "Nhóm 45 + 5 = 50, sau đó: 50 + 19 = 69. Sử dụng tính chất giao hoán và kết hợp.",
+      "orderIndex": 2
+    },
+    {
+      "type": "TRUE_FALSE",
+      "question": "Tính chất kết hợp cho phép ta nhóm các số theo nhiều cách khác nhau. Đúng hay sai?",
+      "correctAnswer": "Đúng",
+      "explanation": "Đúng. Tính chất kết hợp cho phép ta nhóm các số theo cách thuận tiện nhất để tính toán.",
+      "orderIndex": 3
+    },
+    {
+      "type": "MULTIPLE_CHOICE",
+      "question": "Tính nhanh: 32 + 47 + 8 + 3. Nên nhóm như thế nào?",
+      "options": [
+        { "label": "A", "value": "(32 + 8) + (47 + 3)" },
+        { "label": "B", "value": "(32 + 47) + (8 + 3)" },
+        { "label": "C", "value": "32 + (47 + 8) + 3" },
+        { "label": "D", "value": "Không thể nhóm" }
+      ],
+      "correctAnswer": "A",
+      "explanation": "(32 + 8) + (47 + 3) = 40 + 50 = 90. Cách nhóm này cho các tổng tròn chục, tính nhanh nhất.",
+      "orderIndex": 4
+    },
+    {
+      "type": "FILL_BLANK",
+      "question": "Điền số: (25 + 15) + 60 = 25 + (... + 60)",
+      "correctAnswer": "15",
+      "explanation": "Theo tính chất kết hợp: (25 + 15) + 60 = 25 + (15 + 60).",
+      "orderIndex": 5
+    },
+    {
+      "type": "MULTIPLE_CHOICE",
+      "question": "Tính: 99 + 87 + 1",
+      "options": [
+        { "label": "A", "value": "185" },
+        { "label": "B", "value": "186" },
+        { "label": "C", "value": "187" },
+        { "label": "D", "value": "188" }
+      ],
+      "correctAnswer": "C",
+      "explanation": "Nhóm 99 + 1 = 100, sau đó: 100 + 87 = 187. Sử dụng tính chất giao hoán và kết hợp.",
+      "orderIndex": 6
+    }
+  ]
+}

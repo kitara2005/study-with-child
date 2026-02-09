@@ -1,0 +1,121 @@
+{
+  "subject": "tieng-viet",
+  "chapter": "chuong-1",
+  "title": "Chính tả: Nghe viết",
+  "slug": "bai-4",
+  "orderIndex": 4,
+  "theoryContent": {
+    "sections": [
+      {
+        "type": "heading",
+        "content": "Bài tập nghe viết"
+      },
+      {
+        "type": "paragraph",
+        "content": "Nghe viết là dạng bài tập quan trọng giúp rèn luyện khả năng viết chính xác, nghe hiểu tốt. Khi nghe viết, cần tập trung lắng nghe, ghi nhớ từng câu, viết đúng chính tả."
+      },
+      {
+        "type": "heading",
+        "content": "Các lỗi chính tả thường gặp"
+      },
+      {
+        "type": "paragraph",
+        "content": "1. Nhầm d/gi/r: đi/giày, dây/giây, rau/râu. 2. Nhầm s/x: xanh/sanh, son/xon. 3. Nhầm ch/tr: cho/tro, chim/trim. 4. Nhầm ng/nh: ngã/nhã, ngọt/nhọt. 5. Viết thiếu dấu hoặc sai dấu."
+      },
+      {
+        "type": "example",
+        "question": "Chọn từ viết đúng: 'Mẹ mua (d/gi)ày mới cho em'",
+        "solution": "Đáp án đúng: 'Mẹ mua giày mới cho em'. Từ 'giày' (footwear) viết với 'gi', không phải 'd'."
+      },
+      {
+        "type": "heading",
+        "content": "Cách luyện tập nghe viết"
+      },
+      {
+        "type": "paragraph",
+        "content": "Bước 1: Nghe cả đoạn văn để hiểu ý chính. Bước 2: Nghe từng câu, viết từng câu. Bước 3: Nghe lại để kiểm tra. Bước 4: Đối chiếu với bản gốc, sửa lỗi."
+      },
+      {
+        "type": "heading",
+        "content": "Các cặp từ dễ nhầm"
+      },
+      {
+        "type": "paragraph",
+        "content": "- Dây (rope) ≠ Giây (second/moment). - Đi (go) ≠ Đỉ (negation particle). - Rau (vegetable) ≠ Râu (beard). - Cho (give) ≠ Tro (ash). - Ngã (fall) ≠ Nhã (elegant)."
+      },
+      {
+        "type": "example",
+        "question": "Điền từ đúng: 'Bố em có bộ ... dài' (râu/rau)",
+        "solution": "Đáp án: 'Bố em có bộ râu dài'. 'Râu' (beard) viết với 'r' và dấu mũ, không phải 'rau' (vegetable)."
+      }
+    ],
+    "keyPoints": [
+      "Phân biệt d/gi/r, s/x, ch/tr, ng/nh",
+      "Viết đúng dấu thanh và dấu phụ",
+      "Tập trung lắng nghe, ghi nhớ từng câu",
+      "Kiểm tra lại sau khi viết xong"
+    ]
+  },
+  "exercises": [
+    {
+      "type": "MULTIPLE_CHOICE",
+      "question": "Chọn từ viết đúng: Con ... bay trên trời",
+      "options": [
+        { "label": "A", "value": "trim" },
+        { "label": "B", "value": "chim" },
+        { "label": "C", "value": "txim" },
+        { "label": "D", "value": "chìm" }
+      ],
+      "correctAnswer": "B",
+      "explanation": "'Chim' (bird) viết với 'ch', không phải 'tr'. 'Chìm' có nghĩa là sink, khác với chim (bird).",
+      "orderIndex": 1
+    },
+    {
+      "type": "FILL_BLANK",
+      "question": "Điền từ đúng: Mẹ mua ... tươi ở chợ (rau/râu)",
+      "correctAnswer": "rau",
+      "explanation": "'Rau' (vegetable) viết với 'r' và dấu sắc. 'Râu' (beard) là từ khác.",
+      "orderIndex": 2
+    },
+    {
+      "type": "TRUE_FALSE",
+      "question": "Từ 'giày' (footwear) viết với 'gi'. Đúng hay sai?",
+      "correctAnswer": "Đúng",
+      "explanation": "Đúng. 'Giày' (footwear) viết với 'gi', không phải 'd' hay 'r'.",
+      "orderIndex": 3
+    },
+    {
+      "type": "MULTIPLE_CHOICE",
+      "question": "Từ nào viết đúng chính tả?",
+      "options": [
+        { "label": "A", "value": "xanh" },
+        { "label": "B", "value": "sanh" },
+        { "label": "C", "value": "xang" },
+        { "label": "D", "value": "xan" }
+      ],
+      "correctAnswer": "A",
+      "explanation": "'Xanh' (green/blue) viết với 'x' và 'nh', không phải 's'.",
+      "orderIndex": 4
+    },
+    {
+      "type": "FILL_BLANK",
+      "question": "Một ... = 60 giây (phút/giây)",
+      "correctAnswer": "phút",
+      "explanation": "Một phút = 60 giây. 'Phút' là đơn vị thời gian.",
+      "orderIndex": 5
+    },
+    {
+      "type": "MULTIPLE_CHOICE",
+      "question": "Chọn câu viết đúng chính tả:",
+      "options": [
+        { "label": "A", "value": "Em đi học bằng xe dạp" },
+        { "label": "B", "value": "Em đi học bằng xe đạp" },
+        { "label": "C", "value": "Em gi học bằng xe đạp" },
+        { "label": "D", "value": "Em đi học bằng xe rạp" }
+      ],
+      "correctAnswer": "B",
+      "explanation": "Câu B đúng: 'Em đi học bằng xe đạp'. Từ 'đi' và 'đạp' viết với 'd', không phải 'gi' hay 'r'.",
+      "orderIndex": 6
+    }
+  ]
+}

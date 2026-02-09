@@ -1,0 +1,133 @@
+{
+  "subject": "toan",
+  "chapter": "chuong-2",
+  "title": "Triệu và lớp triệu",
+  "slug": "bai-2",
+  "orderIndex": 2,
+  "theoryContent": {
+    "sections": [
+      {
+        "type": "heading",
+        "content": "Triệu là gì?"
+      },
+      {
+        "type": "paragraph",
+        "content": "Một triệu là 1 000 000, gồm sáu chữ số 0. Triệu là một đơn vị đếm rất lớn, thường dùng để đếm dân số, tiền bạc, khoảng cách."
+      },
+      {
+        "type": "heading",
+        "content": "Lớp triệu và lớp nghìn"
+      },
+      {
+        "type": "paragraph",
+        "content": "Trong số có 7, 8, 9 chữ số, ta chia thành các lớp: lớp đơn vị (3 chữ số bên phải), lớp nghìn (3 chữ số giữa), lớp triệu (3 chữ số bên trái). Ví dụ: 123 456 789 = 123 triệu 456 nghìn 789."
+      },
+      {
+        "type": "example",
+        "question": "Đọc số: 5 234 567",
+        "solution": "Năm triệu, hai trăm ba mươi tư nghìn, năm trăm sáu mươi bảy. Phần lớp triệu: 5, phần lớp nghìn: 234, phần lớp đơn vị: 567."
+      },
+      {
+        "type": "heading",
+        "content": "Cách viết số lớn"
+      },
+      {
+        "type": "paragraph",
+        "content": "Khi viết số lớn, ta thường dùng dấu chấm hoặc khoảng trắng để ngăn cách các lớp cho dễ đọc. Ví dụ: 12 345 678 hoặc 12.345.678."
+      },
+      {
+        "type": "example",
+        "question": "Viết số: Mười hai triệu, ba trăm bốn mươi lăm nghìn, sáu trăm bảy mươi tám",
+        "solution": "12 345 678. Lớp triệu: 12, lớp nghìn: 345, lớp đơn vị: 678."
+      },
+      {
+        "type": "heading",
+        "content": "Ứng dụng thực tế"
+      },
+      {
+        "type": "paragraph",
+        "content": "Dân số Việt Nam khoảng 100 triệu người. Khoảng cách từ Hà Nội đến TP.HCM khoảng 1 700 km = 1 triệu 700 nghìn mét."
+      }
+    ],
+    "keyPoints": [
+      "Một triệu = 1 000 000",
+      "Số chia thành 3 lớp: triệu, nghìn, đơn vị",
+      "Mỗi lớp có tối đa 3 chữ số",
+      "Dùng khoảng trắng hoặc dấu chấm để ngăn cách các lớp"
+    ]
+  },
+  "exercises": [
+    {
+      "type": "MULTIPLE_CHOICE",
+      "question": "Một triệu bằng bao nhiêu?",
+      "options": [
+        { "label": "A", "value": "10 000" },
+        { "label": "B", "value": "100 000" },
+        { "label": "C", "value": "1 000 000" },
+        { "label": "D", "value": "10 000 000" }
+      ],
+      "correctAnswer": "C",
+      "explanation": "Một triệu = 1 000 000, gồm số 1 và sáu chữ số 0.",
+      "orderIndex": 1
+    },
+    {
+      "type": "FILL_BLANK",
+      "question": "Viết số: Bảy triệu, năm trăm nghìn. Đáp án: ...",
+      "correctAnswer": "7500000",
+      "explanation": "Bảy triệu = 7 000 000, năm trăm nghìn = 500 000. Tổng: 7 500 000.",
+      "orderIndex": 2
+    },
+    {
+      "type": "MULTIPLE_CHOICE",
+      "question": "Đọc số 3 456 789",
+      "options": [
+        {
+          "label": "A",
+          "value": "Ba nghìn, bốn trăm năm mươi sáu, bảy trăm tám mươi chín"
+        },
+        {
+          "label": "B",
+          "value": "Ba triệu, bốn trăm năm mươi sáu nghìn, bảy trăm tám mươi chín"
+        },
+        {
+          "label": "C",
+          "value": "Ba trăm bốn mươi lăm nghìn, sáu trăm bảy mươi tám"
+        },
+        {
+          "label": "D",
+          "value": "Ba mươi bốn triệu, năm mươi sáu nghìn, bảy trăm tám mươi chín"
+        }
+      ],
+      "correctAnswer": "B",
+      "explanation": "3 456 789 đọc là: Ba triệu, bốn trăm năm mươi sáu nghìn, bảy trăm tám mươi chín.",
+      "orderIndex": 3
+    },
+    {
+      "type": "TRUE_FALSE",
+      "question": "Trong số 8 234 567, lớp triệu là 8. Đúng hay sai?",
+      "correctAnswer": "Đúng",
+      "explanation": "Đúng. Số 8 234 567 có lớp triệu là 8, lớp nghìn là 234, lớp đơn vị là 567.",
+      "orderIndex": 4
+    },
+    {
+      "type": "FILL_BLANK",
+      "question": "Số 15 678 900 có ... triệu",
+      "correctAnswer": "15",
+      "explanation": "Số 15 678 900 có 15 triệu (lớp triệu là 15).",
+      "orderIndex": 5
+    },
+    {
+      "type": "MULTIPLE_CHOICE",
+      "question": "Viết số: Hai mươi triệu, không trăm linh năm nghìn, ba trăm",
+      "options": [
+        { "label": "A", "value": "20 005 300" },
+        { "label": "B", "value": "20 050 300" },
+        { "label": "C", "value": "20 500 300" },
+        { "label": "D", "value": "2 005 300" }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Hai mươi triệu = 20 000 000, không trăm linh năm nghìn = 5 000, ba trăm = 300. Tổng: 20 005 300.",
+      "orderIndex": 6
+    }
+  ]
+}

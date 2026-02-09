@@ -1,0 +1,116 @@
+{
+  "subject": "tieng-viet",
+  "chapter": "chuong-1",
+  "title": "Kể chuyện: Sự tích Hồ Ba Bể",
+  "slug": "bai-5",
+  "orderIndex": 5,
+  "theoryContent": {
+    "sections": [
+      {
+        "type": "heading",
+        "content": "Sự tích Hồ Ba Bể"
+      },
+      {
+        "type": "paragraph",
+        "content": "Ngày xưa, ở vùng đất Bắc Kạn có một làng giàu có, nhưng dân làng lại rất keo kiệt, không ai chịu giúp đỡ người nghèo khó. Chỉ có một bà góa nghèo luôn sẵn sàng giúp đỡ người khác dù bà không có gì nhiều."
+      },
+      {
+        "type": "paragraph",
+        "content": "Một hôm, có một ông lão ăn xin đến xin ăn. Ông đi khắp làng nhưng không ai cho. Chỉ có bà góa nghèo mời ông vào nhà, chia sẻ bữa cơm đạm bạc. Ông lão cảm động, trước khi đi bảo bà: 'Nếu nghe tiếng trống, hãy chạy lên núi ngay, đừng nhìn lại!'"
+      },
+      {
+        "type": "paragraph",
+        "content": "Đêm đó, tiếng trống vang lên. Bà góa vội chạy lên núi. Cả làng chìm xuống nước, biến thành hồ lớn. Bà nhớ lời căn dặn, không nhìn lại. Từ đó, hồ mang tên Ba Bể, nhắc nhở mọi người về lòng nhân ái."
+      },
+      {
+        "type": "example",
+        "question": "Tại sao chỉ có bà góa được cứu?",
+        "solution": "Vì bà góa có lòng nhân ái, sẵn sàng chia sẻ với người nghèo khó dù bà không có nhiều. Ông lão thần tiên đã báo trước để cứu bà."
+      },
+      {
+        "type": "heading",
+        "content": "Ý nghĩa sự tích"
+      },
+      {
+        "type": "paragraph",
+        "content": "Sự tích dạy chúng ta: phải có lòng nhân ái, giúp đỡ người khác; không được keo kiệt, bủn xỉn; tấm lòng tốt sẽ được đền đáp; của cho không bằng cách cho."
+      },
+      {
+        "type": "heading",
+        "content": "Cách kể chuyện sự tích"
+      },
+      {
+        "type": "paragraph",
+        "content": "Khi kể sự tích, cần: kể rõ bối cảnh (ngày xưa, ở đâu); giới thiệu nhân vật; kể theo thứ tự thời gian; nhấn mạnh bài học; kết thúc có ý nghĩa."
+      }
+    ],
+    "keyPoints": [
+      "Phải có lòng nhân ái, sẵn sàng giúp đỡ người khác",
+      "Không được keo kiệt, bủn xỉn",
+      "Tấm lòng tốt sẽ được đền đáp",
+      "Kể sự tích phải rõ ràng, có bài học"
+    ]
+  },
+  "exercises": [
+    {
+      "type": "MULTIPLE_CHOICE",
+      "question": "Sự tích Hồ Ba Bể xảy ra ở tỉnh nào?",
+      "options": [
+        { "label": "A", "value": "Hà Nội" },
+        { "label": "B", "value": "Bắc Kạn" },
+        { "label": "C", "value": "Cao Bằng" },
+        { "label": "D", "value": "Lạng Sơn" }
+      ],
+      "correctAnswer": "B",
+      "explanation": "Sự tích Hồ Ba Bể xảy ra ở vùng đất Bắc Kạn, miền Bắc Việt Nam.",
+      "orderIndex": 1
+    },
+    {
+      "type": "FILL_BLANK",
+      "question": "Chỉ có bà ... sẵn sàng giúp đỡ ông lão ăn xin.",
+      "correctAnswer": "góa nghèo",
+      "explanation": "Chỉ có bà góa nghèo sẵn sàng chia sẻ bữa cơm với ông lão ăn xin.",
+      "orderIndex": 2
+    },
+    {
+      "type": "TRUE_FALSE",
+      "question": "Dân làng rất giàu có nhưng keo kiệt, không giúp người nghèo. Đúng hay sai?",
+      "correctAnswer": "Đúng",
+      "explanation": "Đúng. Dân làng giàu có nhưng keo kiệt, không ai chịu giúp ông lão ăn xin.",
+      "orderIndex": 3
+    },
+    {
+      "type": "MULTIPLE_CHOICE",
+      "question": "Ông lão căn dặn bà góa làm gì khi nghe tiếng trống?",
+      "options": [
+        { "label": "A", "value": "Chạy xuống hồ" },
+        { "label": "B", "value": "Chạy lên núi, không nhìn lại" },
+        { "label": "C", "value": "Ở yên trong nhà" },
+        { "label": "D", "value": "Gọi dân làng" }
+      ],
+      "correctAnswer": "B",
+      "explanation": "Ông lão bảo bà: 'Nếu nghe tiếng trống, hãy chạy lên núi ngay, đừng nhìn lại!'",
+      "orderIndex": 4
+    },
+    {
+      "type": "FILL_BLANK",
+      "question": "Cả làng chìm xuống nước, biến thành ... lớn.",
+      "correctAnswer": "hồ",
+      "explanation": "Cả làng chìm xuống nước, biến thành hồ lớn có tên là Hồ Ba Bể.",
+      "orderIndex": 5
+    },
+    {
+      "type": "MULTIPLE_CHOICE",
+      "question": "Bài học chính của sự tích Hồ Ba Bể là gì?",
+      "options": [
+        { "label": "A", "value": "Không nên sống gần hồ" },
+        { "label": "B", "value": "Phải giàu có mới được tôn trọng" },
+        { "label": "C", "value": "Phải có lòng nhân ái, giúp đỡ người khác" },
+        { "label": "D", "value": "Không nên tin người lạ" }
+      ],
+      "correctAnswer": "C",
+      "explanation": "Bài học chính: phải có lòng nhân ái, sẵn sàng giúp đỡ người khác. Tấm lòng tốt sẽ được đền đáp.",
+      "orderIndex": 6
+    }
+  ]
+}

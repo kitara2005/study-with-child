@@ -1,0 +1,121 @@
+{
+  "subject": "toan",
+  "chapter": "chuong-2",
+  "title": "Luyện tập chung",
+  "slug": "bai-5",
+  "orderIndex": 5,
+  "theoryContent": {
+    "sections": [
+      {
+        "type": "heading",
+        "content": "Ôn tập kiến thức chương 2"
+      },
+      {
+        "type": "paragraph",
+        "content": "Chương Số tự nhiên đã giúp chúng ta hiểu về các số lớn hơn 100 000, triệu và lớp triệu, cách so sánh và viết số trong hệ thập phân. Bài luyện tập này sẽ củng cố tất cả kiến thức đã học."
+      },
+      {
+        "type": "heading",
+        "content": "Các dạng bài tập"
+      },
+      {
+        "type": "paragraph",
+        "content": "1. Đọc và viết số có 6-7 chữ số. 2. Phân tích giá trị các chữ số. 3. So sánh và sắp xếp các số. 4. Viết số dưới dạng tổng theo hệ thập phân. 5. Giải bài toán thực tế với số lớn."
+      },
+      {
+        "type": "example",
+        "question": "Đọc số 3 456 789 và phân tích theo hệ thập phân",
+        "solution": "Đọc: Ba triệu, bốn trăm năm mươi sáu nghìn, bảy trăm tám mươi chín. Phân tích: 3 × 1000000 + 4 × 100000 + 5 × 10000 + 6 × 1000 + 7 × 100 + 8 × 10 + 9 × 1."
+      },
+      {
+        "type": "heading",
+        "content": "Bài toán thực tế"
+      },
+      {
+        "type": "paragraph",
+        "content": "Số lớn thường xuất hiện trong cuộc sống: dân số thành phố, giá nhà đất, khoảng cách giữa các tỉnh, sản lượng nông nghiệp."
+      },
+      {
+        "type": "example",
+        "question": "Dân số Hà Nội là 8 246 000 người, dân số TP.HCM là 9 123 000 người. Thành phố nào đông dân hơn và hơn bao nhiêu người?",
+        "solution": "So sánh: 9 123 000 > 8 246 000. Vậy TP.HCM đông dân hơn. Hiệu: 9 123 000 - 8 246 000 = 877 000 người. TP.HCM đông hơn Hà Nội 877 000 người."
+      },
+      {
+        "type": "heading",
+        "content": "Lời khuyên khi làm bài"
+      },
+      {
+        "type": "paragraph",
+        "content": "- Đọc kỹ đề bài. - Xác định dạng bài tập. - Áp dụng đúng kiến thức đã học. - Kiểm tra lại kết quả. - Viết đáp số đầy đủ."
+      }
+    ],
+    "keyPoints": [
+      "Đọc và viết số lớn đúng cách",
+      "Hiểu giá trị từng chữ số theo vị trí",
+      "So sánh số: nhiều chữ số hơn hoặc từ trái sang phải",
+      "Phân tích số theo hệ thập phân"
+    ]
+  },
+  "exercises": [
+    {
+      "type": "MULTIPLE_CHOICE",
+      "question": "Số nào viết đúng: Năm triệu, không trăm linh ba nghìn, bốn trăm?",
+      "options": [
+        { "label": "A", "value": "5 003 400" },
+        { "label": "B", "value": "5 030 400" },
+        { "label": "C", "value": "5 300 400" },
+        { "label": "D", "value": "500 3400" }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Năm triệu = 5 000 000, không trăm linh ba nghìn = 3 000, bốn trăm = 400. Tổng: 5 003 400.",
+      "orderIndex": 1
+    },
+    {
+      "type": "FILL_BLANK",
+      "question": "Sắp xếp tăng dần: 567 890, 56 789, 5 678 900. Số nhỏ nhất là ...",
+      "correctAnswer": "56789",
+      "explanation": "56 789 nhỏ nhất (5 chữ số), 567 890 (6 chữ số), 5 678 900 lớn nhất (7 chữ số).",
+      "orderIndex": 2
+    },
+    {
+      "type": "TRUE_FALSE",
+      "question": "Trong số 7 654 321, chữ số 5 có giá trị 50 000. Đúng hay sai?",
+      "correctAnswer": "Sai",
+      "explanation": "Sai. Chữ số 5 ở hàng trăm nghìn, có giá trị 500 000 chứ không phải 50 000.",
+      "orderIndex": 3
+    },
+    {
+      "type": "MULTIPLE_CHOICE",
+      "question": "Một tỉnh có dân số 2 345 678 người. Viết số này thành tổng theo hệ thập phân, lớp triệu là?",
+      "options": [
+        { "label": "A", "value": "2 × 100000" },
+        { "label": "B", "value": "2 × 1000000" },
+        { "label": "C", "value": "23 × 100000" },
+        { "label": "D", "value": "2 × 10000" }
+      ],
+      "correctAnswer": "B",
+      "explanation": "Lớp triệu là 2, nên phần lớp triệu = 2 × 1 000 000 = 2 000 000.",
+      "orderIndex": 4
+    },
+    {
+      "type": "FILL_BLANK",
+      "question": "So sánh: 4 567 890 ... 4 576 890. Điền dấu (<, >, =)",
+      "correctAnswer": "<",
+      "explanation": "4 567 890 < 4 576 890. Cùng 7 chữ số, hai chữ số đầu giống nhau. Chữ số thứ ba: 5 < 7.",
+      "orderIndex": 5
+    },
+    {
+      "type": "MULTIPLE_CHOICE",
+      "question": "Giá một căn nhà là 3 500 000 000 đồng. Đọc số tiền này.",
+      "options": [
+        { "label": "A", "value": "Ba mươi lăm triệu đồng" },
+        { "label": "B", "value": "Ba trăm năm mươi triệu đồng" },
+        { "label": "C", "value": "Ba tỷ, năm trăm triệu đồng" },
+        { "label": "D", "value": "Ba nghìn, năm trăm triệu đồng" }
+      ],
+      "correctAnswer": "C",
+      "explanation": "3 500 000 000 đồng đọc là: Ba tỷ, năm trăm triệu đồng. (1 tỷ = 1 000 triệu = 1 000 000 000)",
+      "orderIndex": 6
+    }
+  ]
+}

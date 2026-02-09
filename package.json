@@ -9,7 +9,9 @@
     "lint": "eslint app/ components/ lib/",
     "format": "prettier --write .",
     "format:check": "prettier --check .",
-    "prepare": "husky"
+    "prepare": "husky",
+    "validate-content": "tsx scripts/content/validate-content.ts",
+    "import-content": "tsx scripts/content/import-content.ts"
   },
   "lint-staged": {
     "*.{ts,tsx}": [

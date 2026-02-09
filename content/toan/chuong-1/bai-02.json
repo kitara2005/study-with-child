@@ -1,0 +1,113 @@
+{
+  "subject": "toan",
+  "chapter": "chuong-1",
+  "title": "Biểu thức có chứa một chữ",
+  "slug": "bai-2",
+  "orderIndex": 2,
+  "theoryContent": {
+    "sections": [
+      {
+        "type": "heading",
+        "content": "Biểu thức có chứa một chữ là gì?"
+      },
+      {
+        "type": "paragraph",
+        "content": "Biểu thức có chứa một chữ là biểu thức toán học có một chữ cái đại diện cho một số chưa biết. Ví dụ: x + 5, 3 × a, b - 10. Chữ cái này có thể thay đổi giá trị."
+      },
+      {
+        "type": "heading",
+        "content": "Cách tính giá trị biểu thức"
+      },
+      {
+        "type": "paragraph",
+        "content": "Để tính giá trị biểu thức, ta thay chữ cái bằng số cụ thể rồi tính. Ví dụ: Tính giá trị x + 5 khi x = 3, ta thay x = 3 vào biểu thức: 3 + 5 = 8."
+      },
+      {
+        "type": "example",
+        "question": "Tính giá trị biểu thức a × 4 khi a = 7",
+        "solution": "Thay a = 7 vào biểu thức: 7 × 4 = 28. Vậy giá trị biểu thức là 28."
+      },
+      {
+        "type": "heading",
+        "content": "Ứng dụng trong thực tế"
+      },
+      {
+        "type": "paragraph",
+        "content": "Biểu thức có chữ giúp ta giải các bài toán thực tế. Ví dụ: Một quyển vở giá x đồng, mua 5 quyển hết 5 × x đồng."
+      },
+      {
+        "type": "example",
+        "question": "Một cái bút giá b đồng. Mua 3 cái bút hết bao nhiêu tiền? Tính khi b = 5000.",
+        "solution": "Biểu thức: 3 × b. Khi b = 5000, ta có: 3 × 5000 = 15000. Vậy mua 3 cái bút hết 15000 đồng."
+      }
+    ],
+    "keyPoints": [
+      "Biểu thức có chứa chữ cái đại diện cho số chưa biết",
+      "Thay số vào chữ cái rồi tính theo thứ tự phép tính",
+      "Biểu thức giúp giải bài toán thực tế một cách linh hoạt",
+      "Chữ cái có thể nhận nhiều giá trị khác nhau"
+    ]
+  },
+  "exercises": [
+    {
+      "type": "MULTIPLE_CHOICE",
+      "question": "Tính giá trị biểu thức x + 8 khi x = 12",
+      "options": [
+        { "label": "A", "value": "18" },
+        { "label": "B", "value": "20" },
+        { "label": "C", "value": "22" },
+        { "label": "D", "value": "24" }
+      ],
+      "correctAnswer": "B",
+      "explanation": "Thay x = 12 vào biểu thức: 12 + 8 = 20. Đáp án đúng là B.",
+      "orderIndex": 1
+    },
+    {
+      "type": "FILL_BLANK",
+      "question": "Tính giá trị biểu thức 5 × a khi a = 9. Kết quả là ...",
+      "correctAnswer": "45",
+      "explanation": "Thay a = 9 vào biểu thức: 5 × 9 = 45.",
+      "orderIndex": 2
+    },
+    {
+      "type": "MULTIPLE_CHOICE",
+      "question": "Một quyển vở giá n đồng. Mua 4 quyển hết bao nhiêu tiền?",
+      "options": [
+        { "label": "A", "value": "n + 4" },
+        { "label": "B", "value": "4 × n" },
+        { "label": "C", "value": "n - 4" },
+        { "label": "D", "value": "n : 4" }
+      ],
+      "correctAnswer": "B",
+      "explanation": "Mua 4 quyển, mỗi quyển n đồng, tổng cộng: 4 × n đồng. Đây là phép nhân.",
+      "orderIndex": 3
+    },
+    {
+      "type": "TRUE_FALSE",
+      "question": "Biểu thức y - 10 khi y = 15 có giá trị bằng 5. Đúng hay sai?",
+      "correctAnswer": "Đúng",
+      "explanation": "Đúng. Thay y = 15 vào biểu thức: 15 - 10 = 5.",
+      "orderIndex": 4
+    },
+    {
+      "type": "FILL_BLANK",
+      "question": "Tính giá trị biểu thức 36 : b khi b = 6. Kết quả là ...",
+      "correctAnswer": "6",
+      "explanation": "Thay b = 6 vào biểu thức: 36 : 6 = 6.",
+      "orderIndex": 5
+    },
+    {
+      "type": "MULTIPLE_CHOICE",
+      "question": "Tính giá trị biểu thức m × 7 khi m = 8",
+      "options": [
+        { "label": "A", "value": "54" },
+        { "label": "B", "value": "56" },
+        { "label": "C", "value": "58" },
+        { "label": "D", "value": "60" }
+      ],
+      "correctAnswer": "B",
+      "explanation": "Thay m = 8 vào biểu thức: 8 × 7 = 56. Đáp án đúng là B.",
+      "orderIndex": 6
+    }
+  ]
+}

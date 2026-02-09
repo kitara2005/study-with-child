@@ -1,0 +1,113 @@
+{
+  "subject": "toan",
+  "chapter": "chuong-1",
+  "title": "Tìm hai số khi biết tổng và hiệu",
+  "slug": "bai-5",
+  "orderIndex": 5,
+  "theoryContent": {
+    "sections": [
+      {
+        "type": "heading",
+        "content": "Bài toán tìm hai số"
+      },
+      {
+        "type": "paragraph",
+        "content": "Khi biết tổng và hiệu của hai số, ta có thể tìm được hai số đó. Đây là dạng toán quan trọng trong chương trình lớp 4."
+      },
+      {
+        "type": "heading",
+        "content": "Cách giải"
+      },
+      {
+        "type": "paragraph",
+        "content": "Bước 1: Tìm số lớn = (Tổng + Hiệu) : 2. Bước 2: Tìm số bé = Tổng - Số lớn. Hoặc: Số bé = (Tổng - Hiệu) : 2."
+      },
+      {
+        "type": "example",
+        "question": "Tìm hai số biết tổng là 50 và hiệu là 10.",
+        "solution": "Số lớn = (50 + 10) : 2 = 60 : 2 = 30. Số bé = 50 - 30 = 20. Kiểm tra: 30 + 20 = 50 (đúng), 30 - 20 = 10 (đúng). Vậy hai số cần tìm là 30 và 20."
+      },
+      {
+        "type": "heading",
+        "content": "Giải thích công thức"
+      },
+      {
+        "type": "paragraph",
+        "content": "Tại sao lại chia cho 2? Vì khi cộng tổng với hiệu, số lớn được tính hai lần (một lần trong tổng, một lần trong hiệu), còn số bé bị trừ đi. Ví dụ: (a + b) + (a - b) = 2a."
+      },
+      {
+        "type": "example",
+        "question": "Hai bạn có tổng cộng 24 viên bi. Bạn A nhiều hơn bạn B 6 viên. Hỏi mỗi bạn có bao nhiêu viên bi?",
+        "solution": "Tổng = 24, hiệu = 6. Bạn A (số lớn) = (24 + 6) : 2 = 30 : 2 = 15 viên. Bạn B (số bé) = 24 - 15 = 9 viên. Kiểm tra: 15 + 9 = 24, 15 - 9 = 6 (đúng)."
+      }
+    ],
+    "keyPoints": [
+      "Số lớn = (Tổng + Hiệu) : 2",
+      "Số bé = (Tổng - Hiệu) : 2 hoặc Tổng - Số lớn",
+      "Luôn kiểm tra lại kết quả bằng phép cộng và phép trừ",
+      "Áp dụng vào bài toán thực tế"
+    ]
+  },
+  "exercises": [
+    {
+      "type": "MULTIPLE_CHOICE",
+      "question": "Tìm số lớn biết tổng hai số là 40 và hiệu là 12.",
+      "options": [
+        { "label": "A", "value": "24" },
+        { "label": "B", "value": "26" },
+        { "label": "C", "value": "28" },
+        { "label": "D", "value": "30" }
+      ],
+      "correctAnswer": "B",
+      "explanation": "Số lớn = (40 + 12) : 2 = 52 : 2 = 26.",
+      "orderIndex": 1
+    },
+    {
+      "type": "FILL_BLANK",
+      "question": "Tổng hai số là 60, hiệu là 20. Số bé là ...",
+      "correctAnswer": "20",
+      "explanation": "Số bé = (60 - 20) : 2 = 40 : 2 = 20. Hoặc tính số lớn trước: (60 + 20) : 2 = 40, rồi: 60 - 40 = 20.",
+      "orderIndex": 2
+    },
+    {
+      "type": "MULTIPLE_CHOICE",
+      "question": "Hai bạn có tổng cộng 36 cái kẹo. Bạn Mai nhiều hơn bạn Lan 8 cái. Hỏi bạn Mai có bao nhiêu cái kẹo?",
+      "options": [
+        { "label": "A", "value": "20 cái" },
+        { "label": "B", "value": "22 cái" },
+        { "label": "C", "value": "24 cái" },
+        { "label": "D", "value": "26 cái" }
+      ],
+      "correctAnswer": "B",
+      "explanation": "Bạn Mai (số lớn) = (36 + 8) : 2 = 44 : 2 = 22 cái kẹo.",
+      "orderIndex": 3
+    },
+    {
+      "type": "TRUE_FALSE",
+      "question": "Để tìm số lớn, ta lấy tổng trừ hiệu rồi chia cho 2. Đúng hay sai?",
+      "correctAnswer": "Sai",
+      "explanation": "Sai. Để tìm số lớn, ta lấy tổng CỘNG hiệu rồi chia cho 2. Công thức: Số lớn = (Tổng + Hiệu) : 2.",
+      "orderIndex": 4
+    },
+    {
+      "type": "FILL_BLANK",
+      "question": "Tổng hai số là 100, hiệu là 40. Số lớn là ...",
+      "correctAnswer": "70",
+      "explanation": "Số lớn = (100 + 40) : 2 = 140 : 2 = 70.",
+      "orderIndex": 5
+    },
+    {
+      "type": "MULTIPLE_CHOICE",
+      "question": "Tuổi bố và tuổi con cộng lại là 48 tuổi. Bố hơn con 24 tuổi. Hỏi con bao nhiêu tuổi?",
+      "options": [
+        { "label": "A", "value": "10 tuổi" },
+        { "label": "B", "value": "12 tuổi" },
+        { "label": "C", "value": "14 tuổi" },
+        { "label": "D", "value": "16 tuổi" }
+      ],
+      "correctAnswer": "B",
+      "explanation": "Con (số bé) = (48 - 24) : 2 = 24 : 2 = 12 tuổi. Kiểm tra: Bố = 48 - 12 = 36 tuổi, 36 - 12 = 24 (đúng).",
+      "orderIndex": 6
+    }
+  ]
+}

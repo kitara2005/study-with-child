@@ -1,0 +1,121 @@
+{
+  "subject": "tieng-viet",
+  "chapter": "chuong-1",
+  "title": "Luyện từ và câu: Từ đơn, từ phức",
+  "slug": "bai-2",
+  "orderIndex": 2,
+  "theoryContent": {
+    "sections": [
+      {
+        "type": "heading",
+        "content": "Từ đơn là gì?"
+      },
+      {
+        "type": "paragraph",
+        "content": "Từ đơn là từ chỉ gồm một âm tiết, không thể tách ra thành những phần nhỏ hơn có nghĩa. Ví dụ: nhà, cây, con, ăn, ngủ, đẹp."
+      },
+      {
+        "type": "example",
+        "question": "Tìm từ đơn trong câu: 'Em học bài ở trường'",
+        "solution": "Từ đơn: em, học, bài, ở. Chú ý: 'trường' là từ đơn vì chỉ có một âm tiết không tách được."
+      },
+      {
+        "type": "heading",
+        "content": "Từ phức là gì?"
+      },
+      {
+        "type": "paragraph",
+        "content": "Từ phức là từ gồm hai âm tiết trở lên ghép lại, có nghĩa mới. Từ phức gồm: từ ghép, từ láy, từ đơn có thêm tiếp đầu ngữ hoặc tiếp vị ngữ."
+      },
+      {
+        "type": "heading",
+        "content": "Các loại từ phức"
+      },
+      {
+        "type": "paragraph",
+        "content": "1. Từ ghép: nhà trường, bàn ghế, xe đạp, học sinh. 2. Từ láy: xanh xanh, đỏ đỏ, nhỏ nhỏ, lớn lớn. 3. Từ có tiếp đầu ngữ: nhà trường, nhà máy, nhà thuốc."
+      },
+      {
+        "type": "example",
+        "question": "Phân biệt: 'nhà' và 'nhà trường'",
+        "solution": "'Nhà' là từ đơn (một âm tiết). 'Nhà trường' là từ ghép (hai âm tiết: nhà + trường), có nghĩa là nơi học tập."
+      },
+      {
+        "type": "heading",
+        "content": "Cách nhận biết"
+      },
+      {
+        "type": "paragraph",
+        "content": "Từ đơn: một âm tiết, không tách được. Từ phức: hai âm tiết trở lên, ghép lại có nghĩa mới. Ví dụ: 'bàn' (từ đơn), 'bàn ghế' (từ ghép - từ phức)."
+      }
+    ],
+    "keyPoints": [
+      "Từ đơn: một âm tiết, không tách được",
+      "Từ phức: hai âm tiết trở lên, ghép lại có nghĩa mới",
+      "Từ phức gồm: từ ghép, từ láy, từ có tiếp đầu ngữ",
+      "Từ ghép thường kết hợp hai từ đơn"
+    ]
+  },
+  "exercises": [
+    {
+      "type": "MULTIPLE_CHOICE",
+      "question": "Từ nào sau đây là từ đơn?",
+      "options": [
+        { "label": "A", "value": "bàn ghế" },
+        { "label": "B", "value": "nhà trường" },
+        { "label": "C", "value": "cây" },
+        { "label": "D", "value": "học sinh" }
+      ],
+      "correctAnswer": "C",
+      "explanation": "'Cây' là từ đơn vì chỉ có một âm tiết. Các từ còn lại đều là từ phức (từ ghép).",
+      "orderIndex": 1
+    },
+    {
+      "type": "FILL_BLANK",
+      "question": "Từ ghép 'xe đạp' được tạo từ hai từ đơn: 'xe' và '...'",
+      "correctAnswer": "đạp",
+      "explanation": "Từ ghép 'xe đạp' = xe + đạp. Hai từ đơn ghép lại tạo thành từ phức có nghĩa mới.",
+      "orderIndex": 2
+    },
+    {
+      "type": "TRUE_FALSE",
+      "question": "Từ 'nhà máy' là từ ghép. Đúng hay sai?",
+      "correctAnswer": "Đúng",
+      "explanation": "Đúng. 'Nhà máy' là từ ghép, được tạo từ 'nhà' và 'máy', có nghĩa là nơi sản xuất.",
+      "orderIndex": 3
+    },
+    {
+      "type": "MULTIPLE_CHOICE",
+      "question": "Có bao nhiêu từ đơn trong câu: 'Con chim bay cao'?",
+      "options": [
+        { "label": "A", "value": "2 từ" },
+        { "label": "B", "value": "3 từ" },
+        { "label": "C", "value": "4 từ" },
+        { "label": "D", "value": "5 từ" }
+      ],
+      "correctAnswer": "C",
+      "explanation": "Có 4 từ đơn: con, chim, bay, cao. Mỗi từ đều chỉ có một âm tiết.",
+      "orderIndex": 4
+    },
+    {
+      "type": "FILL_BLANK",
+      "question": "Từ 'xanh xanh' là từ ... (ghi: đơn hoặc láy)",
+      "correctAnswer": "láy",
+      "explanation": "Từ 'xanh xanh' là từ láy, lặp lại âm tiết 'xanh' để diễn tả màu sắc nhạt hơn.",
+      "orderIndex": 5
+    },
+    {
+      "type": "MULTIPLE_CHOICE",
+      "question": "Từ nào sau đây KHÔNG phải từ ghép?",
+      "options": [
+        { "label": "A", "value": "bàn ghế" },
+        { "label": "B", "value": "trường học" },
+        { "label": "C", "value": "ăn" },
+        { "label": "D", "value": "xe máy" }
+      ],
+      "correctAnswer": "C",
+      "explanation": "'Ăn' là từ đơn, chỉ có một âm tiết. Các từ còn lại đều là từ ghép (hai âm tiết).",
+      "orderIndex": 6
+    }
+  ]
+}

@@ -1,0 +1,129 @@
+{
+  "subject": "tieng-viet",
+  "chapter": "chuong-2",
+  "title": "Luyện từ và câu: Danh từ",
+  "slug": "bai-5",
+  "orderIndex": 5,
+  "theoryContent": {
+    "sections": [
+      {
+        "type": "heading",
+        "content": "Danh từ là gì?"
+      },
+      {
+        "type": "paragraph",
+        "content": "Danh từ là từ chỉ tên gọi của người, sự vật, hiện tượng. Danh từ trả lời câu hỏi: ai? cái gì? con gì? Ví dụ: bàn, ghế, chim, mẹ, nhà, cây."
+      },
+      {
+        "type": "heading",
+        "content": "Các loại danh từ"
+      },
+      {
+        "type": "paragraph",
+        "content": "1. Danh từ chỉ người: mẹ, bạn, thầy giáo, em bé. 2. Danh từ chỉ vật: bàn, ghế, sách, bút. 3. Danh từ chỉ con vật: chó, mèo, chim, cá. 4. Danh từ chỉ địa điểm: trường, nhà, chợ, công viên. 5. Danh từ chỉ hiện tượng: gió, mưa, nắng."
+      },
+      {
+        "type": "example",
+        "question": "Tìm danh từ trong câu: 'Em đi học ở trường'",
+        "solution": "Danh từ: em (chỉ người), trường (chỉ địa điểm). Các từ 'đi', 'học', 'ở' không phải danh từ."
+      },
+      {
+        "type": "heading",
+        "content": "Cách nhận biết danh từ"
+      },
+      {
+        "type": "paragraph",
+        "content": "Cách 1: Hỏi 'ai?', 'cái gì?', 'con gì?'. Cách 2: Đặt trước danh từ các từ: cái, con, người, bộ, chiếc... Ví dụ: cái bàn, con chó, người thầy, chiếc xe."
+      },
+      {
+        "type": "example",
+        "question": "Phân biệt: 'học' và 'học sinh'",
+        "solution": "'Học' là động từ (hành động). 'Học sinh' là danh từ (chỉ người đi học). Ta có thể nói 'người học sinh' nhưng không nói 'người học'."
+      },
+      {
+        "type": "heading",
+        "content": "Vai trò của danh từ trong câu"
+      },
+      {
+        "type": "paragraph",
+        "content": "Danh từ thường làm: chủ ngữ (Em học bài), tân ngữ (Mẹ gọi em), bổ ngữ (Đây là bạn em). Danh từ là thành phần quan trọng trong câu."
+      },
+      {
+        "type": "heading",
+        "content": "Danh từ chung và danh từ riêng"
+      },
+      {
+        "type": "paragraph",
+        "content": "Danh từ chung: chỉ chung một nhóm (học sinh, sông, núi). Danh từ riêng: chỉ riêng một đối tượng, viết hoa chữ đầu (Lan, Hà Nội, sông Hồng)."
+      }
+    ],
+    "keyPoints": [
+      "Danh từ là từ chỉ tên gọi của người, sự vật, hiện tượng",
+      "Danh từ trả lời câu hỏi: ai? cái gì? con gì?",
+      "Có nhiều loại danh từ: chỉ người, vật, con vật, địa điểm",
+      "Danh từ riêng viết hoa chữ đầu"
+    ]
+  },
+  "exercises": [
+    {
+      "type": "MULTIPLE_CHOICE",
+      "question": "Từ nào sau đây là danh từ?",
+      "options": [
+        { "label": "A", "value": "chạy" },
+        { "label": "B", "value": "đẹp" },
+        { "label": "C", "value": "cây" },
+        { "label": "D", "value": "nhanh" }
+      ],
+      "correctAnswer": "C",
+      "explanation": "'Cây' là danh từ (chỉ sự vật). 'Chạy' là động từ, 'đẹp' và 'nhanh' là tính từ.",
+      "orderIndex": 1
+    },
+    {
+      "type": "FILL_BLANK",
+      "question": "Danh từ trả lời câu hỏi: ...? cái gì? con gì?",
+      "correctAnswer": "ai",
+      "explanation": "Danh từ trả lời câu hỏi: ai? (người), cái gì? (vật), con gì? (con vật).",
+      "orderIndex": 2
+    },
+    {
+      "type": "TRUE_FALSE",
+      "question": "Từ 'mẹ' là danh từ chỉ người. Đúng hay sai?",
+      "correctAnswer": "Đúng",
+      "explanation": "Đúng. 'Mẹ' là danh từ chỉ người.",
+      "orderIndex": 3
+    },
+    {
+      "type": "MULTIPLE_CHOICE",
+      "question": "Có bao nhiêu danh từ trong câu: 'Con chim bay trên cây cao'?",
+      "options": [
+        { "label": "A", "value": "1 danh từ" },
+        { "label": "B", "value": "2 danh từ" },
+        { "label": "C", "value": "3 danh từ" },
+        { "label": "D", "value": "4 danh từ" }
+      ],
+      "correctAnswer": "B",
+      "explanation": "Có 2 danh từ: 'chim' (con vật) và 'cây' (sự vật). 'Con', 'bay', 'trên', 'cao' không phải danh từ.",
+      "orderIndex": 4
+    },
+    {
+      "type": "FILL_BLANK",
+      "question": "Danh từ riêng viết ... chữ đầu.",
+      "correctAnswer": "hoa",
+      "explanation": "Danh từ riêng viết hoa chữ đầu. Ví dụ: Lan, Hà Nội, sông Hồng.",
+      "orderIndex": 5
+    },
+    {
+      "type": "MULTIPLE_CHOICE",
+      "question": "Từ nào là danh từ riêng?",
+      "options": [
+        { "label": "A", "value": "sông" },
+        { "label": "B", "value": "núi" },
+        { "label": "C", "value": "Hà Nội" },
+        { "label": "D", "value": "trường" }
+      ],
+      "correctAnswer": "C",
+      "explanation": "'Hà Nội' là danh từ riêng (tên thủ đô), viết hoa chữ đầu. Các từ khác là danh từ chung.",
+      "orderIndex": 6
+    }
+  ]
+}

@@ -1,0 +1,132 @@
+{
+  "subject": "tieng-viet",
+  "chapter": "chuong-2",
+  "title": "Luyện từ và câu: Mở rộng vốn từ",
+  "slug": "bai-2",
+  "orderIndex": 2,
+  "theoryContent": {
+    "sections": [
+      {
+        "type": "heading",
+        "content": "Mở rộng vốn từ về tính trung thực"
+      },
+      {
+        "type": "paragraph",
+        "content": "Trong cuộc sống, chúng ta cần nhiều từ để diễn tả tính cách con người. Bài học hôm nay tập trung vào các từ liên quan đến sự trung thực và gian dối."
+      },
+      {
+        "type": "heading",
+        "content": "Nhóm từ về người trung thực"
+      },
+      {
+        "type": "paragraph",
+        "content": "Người trung thực: ngay thẳng, chính trực, thật thà, thành thật, trung thực, không gian dối, không nói dối. Ví dụ: 'Anh ấy là người rất ngay thẳng, không bao giờ nói láo.'"
+      },
+      {
+        "type": "example",
+        "question": "Điền từ thích hợp: 'Bạn An luôn nói ... với mọi người'",
+        "solution": "Có thể điền: thật, thành thật, hoặc trung thực. Ví dụ: 'Bạn An luôn nói thật với mọi người.'"
+      },
+      {
+        "type": "heading",
+        "content": "Nhóm từ về người gian dối"
+      },
+      {
+        "type": "paragraph",
+        "content": "Người gian dối: không trung thực, láo khoét, dối trá, nói dối, gian xảo, không ngay thẳng, vòng vo. Ví dụ: 'Không ai tin những lời dối trá của hắn.'"
+      },
+      {
+        "type": "heading",
+        "content": "Từ trái nghĩa"
+      },
+      {
+        "type": "paragraph",
+        "content": "Trung thực ↔ Gian dối. Ngay thẳng ↔ Vòng vo. Thật thà ↔ Láo khoét. Chính trực ↔ Gian xảo. Nói thật ↔ Nói dối."
+      },
+      {
+        "type": "example",
+        "question": "Viết câu với từ 'chính trực'",
+        "solution": "Ví dụ: 'Ông giáo làng là người chính trực, được mọi người kính trọng.' Từ 'chính trực' mô tả người có đạo đức tốt, ngay thẳng."
+      },
+      {
+        "type": "heading",
+        "content": "Ứng dụng trong câu"
+      },
+      {
+        "type": "paragraph",
+        "content": "Khi viết văn hoặc nói chuyện, hãy chọn từ phù hợp với ngữ cảnh. Ví dụ: 'thành thật' dùng trong giao tiếp hằng ngày, 'chính trực' dùng trong văn trang trọng."
+      }
+    ],
+    "keyPoints": [
+      "Nhóm từ người trung thực: ngay thẳng, chính trực, thật thà",
+      "Nhóm từ người gian dối: láo khoét, dối trá, vòng vo",
+      "Hiểu và sử dụng từ trái nghĩa",
+      "Chọn từ phù hợp với ngữ cảnh"
+    ]
+  },
+  "exercises": [
+    {
+      "type": "MULTIPLE_CHOICE",
+      "question": "Từ nào chỉ người trung thực?",
+      "options": [
+        { "label": "A", "value": "Láo khoét" },
+        { "label": "B", "value": "Dối trá" },
+        { "label": "C", "value": "Ngay thẳng" },
+        { "label": "D", "value": "Gian xảo" }
+      ],
+      "correctAnswer": "C",
+      "explanation": "'Ngay thẳng' chỉ người trung thực. Các từ còn lại chỉ người gian dối.",
+      "orderIndex": 1
+    },
+    {
+      "type": "FILL_BLANK",
+      "question": "Từ trái nghĩa của 'trung thực' là '...'",
+      "correctAnswer": "gian dối",
+      "explanation": "Trung thực ↔ Gian dối. Đây là cặp từ trái nghĩa.",
+      "orderIndex": 2
+    },
+    {
+      "type": "TRUE_FALSE",
+      "question": "Từ 'chính trực' và 'ngay thẳng' có nghĩa gần giống nhau. Đúng hay sai?",
+      "correctAnswer": "Đúng",
+      "explanation": "Đúng. 'Chính trực' và 'ngay thẳng' đều mô tả người trung thực, có đạo đức tốt.",
+      "orderIndex": 3
+    },
+    {
+      "type": "MULTIPLE_CHOICE",
+      "question": "Điền từ thích hợp: 'Không ai thích người ... và gian dối'",
+      "options": [
+        { "label": "A", "value": "trung thực" },
+        { "label": "B", "value": "ngay thẳng" },
+        { "label": "C", "value": "láo khoét" },
+        { "label": "D", "value": "chính trực" }
+      ],
+      "correctAnswer": "C",
+      "explanation": "'Láo khoét' phù hợp với ngữ cảnh tiêu cực (đi cùng 'gian dối'). Không ai thích người láo khoét và gian dối.",
+      "orderIndex": 4
+    },
+    {
+      "type": "FILL_BLANK",
+      "question": "Từ trái nghĩa của 'nói dối' là 'nói ...'",
+      "correctAnswer": "thật",
+      "explanation": "Nói dối ↔ Nói thật. Đây là cặp từ trái nghĩa.",
+      "orderIndex": 5
+    },
+    {
+      "type": "MULTIPLE_CHOICE",
+      "question": "Câu nào sử dụng từ đúng nghĩa?",
+      "options": [
+        { "label": "A", "value": "Anh ấy rất dối trá, ai cũng tin tưởng" },
+        { "label": "B", "value": "Cô ấy ngay thẳng nên không ai thích" },
+        {
+          "label": "C",
+          "value": "Người chính trực luôn được mọi người kính trọng"
+        },
+        { "label": "D", "value": "Học sinh thật thà thường hay nói dối" }
+      ],
+      "correctAnswer": "C",
+      "explanation": "Câu C đúng: Người chính trực (trung thực) thì được mọi người kính trọng. Các câu khác dùng từ mâu thuẫn.",
+      "orderIndex": 6
+    }
+  ]
+}

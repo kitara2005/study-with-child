@@ -1,0 +1,112 @@
+{
+  "subject": "tieng-viet",
+  "chapter": "chuong-1",
+  "title": "Đọc: Dế Mèn bênh vực kẻ yếu",
+  "slug": "bai-3",
+  "orderIndex": 3,
+  "theoryContent": {
+    "sections": [
+      {
+        "type": "heading",
+        "content": "Giới thiệu tác phẩm"
+      },
+      {
+        "type": "paragraph",
+        "content": "Truyện Dế Mèn phiêu lưu ký của nhà văn Tô Hoài kể về chú Dế Mèn dũng cảm, giàu lòng nhân ái. Dế Mèn không chỉ mạnh mẽ mà còn luôn sẵn sàng bênh vực người yếu hơn."
+      },
+      {
+        "type": "heading",
+        "content": "Nội dung bài đọc"
+      },
+      {
+        "type": "paragraph",
+        "content": "Một hôm, Dế Mèn thấy con Cào Cào to lớn đang bắt nạt con Cào Cào nhỏ. Con Cào Cào nhỏ sợ hãi, không dám chống trả. Dế Mèn dù biết mình nhỏ bé, nhưng không thể nhìn cảnh bất công đó."
+      },
+      {
+        "type": "paragraph",
+        "content": "Dế Mèn dũng cảm xông lên, la lớn: 'Đừng có bắt nạt người yếu! Tao không cho phép!' Con Cào Cào to ngạc nhiên, không ngờ có ai dám can ngăn. Nhờ sự dũng cảm của Dế Mèn, con Cào Cào nhỏ được cứu."
+      },
+      {
+        "type": "example",
+        "question": "Tại sao Dế Mèn dám xông lên bênh vực con Cào Cào nhỏ?",
+        "solution": "Vì Dế Mèn có lòng nhân ái, không thể nhìn cảnh bất công. Dù biết mình nhỏ bé, nhưng lòng dũng cảm và ý thức bảo vệ kẻ yếu khiến Dế Mèn không sợ hãi."
+      },
+      {
+        "type": "heading",
+        "content": "Ý nghĩa bài học"
+      },
+      {
+        "type": "paragraph",
+        "content": "Câu chuyện dạy chúng ta: phải có lòng dũng cảm, không sợ cái ác; phải giúp đỡ người yếu hơn; không được bắt nạt người khác; sức mạnh thật sự không phải ở thân hình to lớn mà ở trái tim dũng cảm."
+      }
+    ],
+    "keyPoints": [
+      "Phải có lòng dũng cảm, không sợ cái ác",
+      "Luôn bênh vực và giúp đỡ người yếu hơn",
+      "Không được bắt nạt, làm tổn thương người khác",
+      "Sức mạnh thật sự nằm ở trái tim dũng cảm"
+    ]
+  },
+  "exercises": [
+    {
+      "type": "MULTIPLE_CHOICE",
+      "question": "Ai là tác giả của truyện 'Dế Mèn phiêu lưu ký'?",
+      "options": [
+        { "label": "A", "value": "Tô Hoài" },
+        { "label": "B", "value": "Nguyễn Nhật Ánh" },
+        { "label": "C", "value": "Nam Cao" },
+        { "label": "D", "value": "Tô Hoàng" }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Tác giả truyện 'Dế Mèn phiêu lưu ký' là nhà văn Tô Hoài, một tác phẩm nổi tiếng trong văn học thiếu nhi Việt Nam.",
+      "orderIndex": 1
+    },
+    {
+      "type": "FILL_BLANK",
+      "question": "Dế Mèn bênh vực con Cào Cào ... đang bị bắt nạt.",
+      "correctAnswer": "nhỏ",
+      "explanation": "Dế Mèn bênh vực con Cào Cào nhỏ đang bị con Cào Cào to bắt nạt.",
+      "orderIndex": 2
+    },
+    {
+      "type": "TRUE_FALSE",
+      "question": "Dế Mèn không dám can ngăn vì sợ con Cào Cào to. Đúng hay sai?",
+      "correctAnswer": "Sai",
+      "explanation": "Sai. Dế Mèn dũng cảm xông lên bênh vực dù biết mình nhỏ bé. Dế Mèn không sợ hãi trước cái ác.",
+      "orderIndex": 3
+    },
+    {
+      "type": "MULTIPLE_CHOICE",
+      "question": "Phẩm chất nào của Dế Mèn được thể hiện trong câu chuyện?",
+      "options": [
+        { "label": "A", "value": "Sợ hãi và nhút nhát" },
+        { "label": "B", "value": "Dũng cảm và nhân ái" },
+        { "label": "C", "value": "Bắt nạt kẻ yếu" },
+        { "label": "D", "value": "Thờ ơ với người khác" }
+      ],
+      "correctAnswer": "B",
+      "explanation": "Dế Mèn thể hiện phẩm chất dũng cảm và nhân ái khi bênh vực kẻ yếu, không sợ nguy hiểm.",
+      "orderIndex": 4
+    },
+    {
+      "type": "FILL_BLANK",
+      "question": "Sức mạnh thật sự không phải ở thân hình to lớn mà ở ... dũng cảm.",
+      "correctAnswer": "trái tim",
+      "explanation": "Bài học: Sức mạnh thật sự nằm ở trái tim dũng cảm, không phải ở thân hình to lớn.",
+      "orderIndex": 5
+    },
+    {
+      "type": "MULTIPLE_CHOICE",
+      "question": "Bài học nào KHÔNG phải từ câu chuyện Dế Mèn?",
+      "options": [
+        { "label": "A", "value": "Phải có lòng dũng cảm" },
+        { "label": "B", "value": "Giúp đỡ người yếu hơn" },
+        { "label": "C", "value": "Chỉ người to lớn mới có sức mạnh" },
+        { "label": "D", "value": "Không được bắt nạt người khác" }
+      ],
+      "correctAnswer": "C",
+      "explanation": "Đáp án C sai. Câu chuyện dạy rằng sức mạnh thật sự không phải ở thân hình to lớn mà ở trái tim dũng cảm.",
+      "orderIndex": 6
+    }
+  ]
+}
