@@ -24,7 +24,11 @@ export async function middleware(request: NextRequest) {
     return NextResponse.redirect(new URL('/', request.url));
   }
 
-  return supabaseResponse;
+  // Pass pathname to admin layout via headers
+  const response = NextResponse.next(supabaseResponse);
+  response.headers.set('x-pathname', pathname);
+
+  return response;
 }
 
 export const config = {
