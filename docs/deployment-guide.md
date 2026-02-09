@@ -47,32 +47,34 @@ Verify: **Supabase Dashboard → Table Editor** should show 6 tables with seed d
 
 ## 2. Vercel Deployment
 
-### Connect Repository
+### GitHub Integration
 
 1. Go to [vercel.com/new](https://vercel.com/new)
-2. Import GitHub repo: `kitara2005/study-with-child`
+2. Import GitHub repo
 3. Framework: **Next.js** (auto-detected)
 4. Root directory: `./`
 5. Build command: `pnpm build` (auto)
 6. Install command: `pnpm install` (auto)
 
-### Environment Variables
+### Environment Variables (Production)
 
-In Vercel project → **Settings → Environment Variables**, add:
+Set in Vercel project **Settings → Environment Variables**:
 
 ```
-NEXT_PUBLIC_SUPABASE_URL=https://[ref].supabase.co
-NEXT_PUBLIC_SUPABASE_ANON_KEY=[anon-key]
-SUPABASE_SERVICE_ROLE_KEY=[service-role-key]
-DATABASE_URL=postgresql://postgres.[ref]:[pwd]@aws-0-ap-southeast-1.pooler.supabase.com:6543/postgres?pgbouncer=true
-DIRECT_URL=postgresql://postgres.[ref]:[pwd]@aws-0-ap-southeast-1.pooler.supabase.com:5432/postgres
+NEXT_PUBLIC_SUPABASE_URL=[your-supabase-url]
+NEXT_PUBLIC_SUPABASE_ANON_KEY=[your-anon-key]
+SUPABASE_SERVICE_ROLE_KEY=[your-service-role-key]
+DATABASE_URL=[pooler-connection-with-pgbouncer]
+DIRECT_URL=[direct-session-connection]
 ```
 
-Set all to **Production + Preview + Development**.
+Set scope: **Production + Preview + Development** (auto-deploy to staging on PR).
 
-### Deploy
+### Automatic Deployment
 
-Click **Deploy**. Vercel auto-deploys on every push to `main`.
+- Every push to `main` → auto-deploy to production
+- PR → auto-deploy preview
+- No manual steps needed (GitHub Actions + Vercel sync)
 
 ### Custom Domain (Optional)
 

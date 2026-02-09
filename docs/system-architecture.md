@@ -35,68 +35,80 @@
     └────────────────────────┘
 ```
 
-## Why This Stack?
+## Stack Rationale
 
-| Component       | Pros                                     | Cons                 | Alternative           |
-| --------------- | ---------------------------------------- | -------------------- | --------------------- |
-| **Next.js 16**  | RSC, SSG/ISR, zero-JS, built-in routing  | Learning curve       | Remix, SvelteKit      |
-| **Supabase**    | Postgres + Auth built-in, free tier ($0) | Cold starts (~500ms) | Firebase, PlanetScale |
-| **Prisma**      | Type-safe ORM, migrations, seed scripts  | Runtime overhead     | Raw SQL, Drizzle      |
-| **Tailwind v4** | JIT, small bundle, shadcn/ui compatible  | Not CSS-in-JS        | Styled-components     |
-| **Vercel**      | Zero-config Next.js deploy, edge caching | Vendor lock-in       | AWS Lambda, Railway   |
+| Component             | Reason                                   | Decision              |
+| --------------------- | ---------------------------------------- | --------------------- |
+| **Next.js 16**        | App Router RSC + ISR for content caching | Production-ready MVP  |
+| **TypeScript strict** | Type safety for educational platform     | All code strict mode  |
+| **Supabase + Prisma** | Free Postgres + type-safe migrations     | Cost: $0, matured     |
+| **Prisma PrismaPg**   | Connection pooling, no cold starts       | Override default      |
+| **Tailwind v4 + UI**  | Utility-first, shadcn/ui ecosystem       | Speed + consistency   |
+| **Webpack build**     | Turbopack incompatible with Supabase     | Explicit config       |
+| **Vitest + E2E**      | Fast unit tests + user flow validation   | 43 tests, all passing |
 
-**Trade-off:** Startup time (~2-3s cold) acceptable for educational platform, not real-time app.
+**Performance:** ISR 1hr revalidate on content pages. Fast auth/exercise submit (<500ms).
 
 ## Database Design
 
-### 6 MVP Models (Prisma Schema)
+### 6 Final Models (Prisma Schema)
 
-**Relationships:**
+**Structure:**
 
 ```
-User
-  ├─ parent: User (optional, self-join for Parent-Child)
+User (role: STUDENT|PARENT|ADMIN)
+  ├─ parent: User? (self-join)
   └─ results: Result[]
 
-Subject
+Subject (8 total)
   └─ chapters: Chapter[]
 
-Chapter
+Chapter (4 per subject)
   ├─ subject: Subject
   └─ lessons: Lesson[]
 
-Lesson
+Lesson (20 total, 2 subjects)
   ├─ chapter: Chapter
-  ├─ exercises: Exercise[]
-  └─ results: Result[]
+  ├─ exercises: Exercise[] (ordered by orderIndex)
+  └─ results: Result[] (user attempts)
 
-Exercise
-  └─ lesson: Lesson
+Exercise (120 total, 3 types)
+  ├─ lesson: Lesson
+  ├─ type: MULTIPLE_CHOICE | FILL_BLANK | TRUE_FALSE
+  ├─ options: Json (question + choices)
+  └─ answers: Json (correct answer definition)
 
-Result
+Result (graded exercise submission)
   ├─ user: User
-  └─ lesson: Lesson
+  ├─ lesson: Lesson
+  ├─ answers: Json[] (user answers array)
+  ├─ score: Int (0-100)
+  ├─ stars: Int (0-3)
+  └─ timeSpent: Int (seconds)
 ```
 
-### Key Decisions
+### Architecture Decisions
 
-1. **JSON columns for exercise options & answers**
-   - `Exercise.options`: `[{ label: "A) ...", value: "a" }]`
-   - `Result.answers`: `[{ exerciseId: "uuid", answer: "a", correct: true }]`
-   - Avoids N+1 queries, flat structure
+1. **JSON Columns**
+   - `Exercise.options`: `[{ label, value }]` for flexible exercise types
+   - `Exercise.answers`: `[{ value, isCorrect }]` for validation
+   - `Result.answers`: `[{ exerciseId, answer, correct }]` for result tracking
+   - Trade-off: Flexibility vs. queryability (acceptable for MVP)
 
-2. **Slug-based URLs instead of IDs**
-   - `/mon/toan/chuong-1/bai-tim-so-thieu` (Vietnamese, SEO-friendly)
-   - Composed unique constraints: `@@unique([subjectId, slug])`, `@@unique([chapterId, slug])`
+2. **Vietnamese URL Slugs**
+   - `/mon/toan/chuong-1/bai-phep-cong` instead of `/subject/1/lesson/abc`
+   - Unique constraints: `@@unique([subjectId, slug])` per level
+   - SEO benefit + cultural relevance
 
-3. **Result storage model**
-   - Records score (0-100%), stars (0-3), user answers
-   - Enables progress tracking, remedial content (post-MVP)
-   - Time tracking (`timeSpent` seconds) for learning analytics
+3. **ISR Caching**
+   - Content pages: revalidate 3600s (1 hour)
+   - Admin/user pages: revalidate 0 (real-time)
+   - Result: <1s cached page load, <2s cold
 
-4. **Soft deletes vs hard deletes**
-   - MVP uses hard deletes (`onDelete: Cascade`)
-   - Post-MVP: Add `deletedAt` timestamp for audit trail
+4. **Admin Auth Validation**
+   - Route protection: `app/admin/layout.tsx` checks `session?.user?.role === ADMIN`
+   - Form validation: Zod schemas on POST handlers
+   - No user-facing error logging (security)
 
 ### Indexes (Performance)
 

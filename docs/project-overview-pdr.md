@@ -16,18 +16,18 @@ Build a free, high-quality online learning platform for Vietnamese Grade 4 stude
 | **Parents**            | Monitor child progress, support learning | Parent dashboard, progress tracking, curriculum alignment |
 | **Admins**             | Manage content, monitor platform         | Simple CRUD tools, content approval workflow              |
 
-## MVP Scope (8 Phases, 4-5 weeks)
+## MVP Scope (8 Phases, Completed)
 
-| Phase | Status      | Work                                                        |
-| ----- | ----------- | ----------------------------------------------------------- |
-| 1     | ✅ Done     | Project setup, Next.js + Supabase, ESLint/Prettier/Husky    |
-| 2     | ✅ Done     | Prisma schema (6 models), seed data (8 subjects), homepage  |
-| 3     | In Progress | Supabase Auth (email + Google OAuth), user profiles         |
-| 4     | Pending     | Content pages (Vietnamese slugs), chapter/lesson navigation |
-| 5     | Pending     | Exercise/quiz system, result tracking, free access          |
-| 6     | Pending     | Basic admin panel (CRUD subjects, chapters, lessons)        |
-| 7     | Pending     | Content pipeline (crawl reference + AI rewrite, 20 lessons) |
-| 8     | Pending     | Testing, performance tuning, Vercel deployment              |
+| Phase | Status  | Work                                                        |
+| ----- | ------- | ----------------------------------------------------------- |
+| 1     | ✅ Done | Project setup, Next.js 16 + TypeScript, Supabase, CI/CD     |
+| 2     | ✅ Done | Prisma schema (6 models), seed data (8 subjects), homepage  |
+| 3     | ✅ Done | Supabase Auth (email + Google OAuth), user profiles         |
+| 4     | ✅ Done | Content pages (Vietnamese slugs), chapter/lesson navigation |
+| 5     | ✅ Done | Exercise system (3 types), result tracking, auto-grading    |
+| 6     | ✅ Done | Admin panel (CRUD subjects, chapters, lessons, exercises)   |
+| 7     | ✅ Done | Content pipeline (JSON content, 2 subjects, 20 lessons)     |
+| 8     | ✅ Done | Testing (43 Vitest + E2E), GitHub Actions, Vercel deploy    |
 
 ## MVP Feature List
 
@@ -46,10 +46,10 @@ Build a free, high-quality online learning platform for Vietnamese Grade 4 stude
 
 **Exercise System**
 
-- 4 exercise types: multiple choice, fill blank, drag-drop, true/false
-- Per-exercise feedback + explanation
-- Score calculation (0-100%), stars (0-3)
-- Result storage (answers, time spent, completion date)
+- 3 exercise types implemented: MULTIPLE_CHOICE, FILL_BLANK, TRUE_FALSE
+- Auto-grading with instant feedback + explanation
+- Score: 0-100%, Stars: 0-3 (80%=1★, 90%=2★, 100%=3★)
+- Result storage: answers JSON, score, stars, timeSpent (seconds)
 
 **Admin Panel**
 
@@ -62,13 +62,15 @@ Build a free, high-quality online learning platform for Vietnamese Grade 4 stude
 - All 8 subjects accessible (2 populated with content, 6 coming soon)
 - No payment system in MVP
 
-## Technical Constraints
+## Technical Stack (Final)
 
-- **Stack:** Next.js 16 App Router, TypeScript, Supabase + Prisma, Tailwind v4 + shadcn/ui
-- **Hosting:** Vercel (free tier for MVP)
-- **Database:** Supabase Free ($0, 500MB storage, RLS required)
-- **Budget:** $0-10/month (domain + Vercel Pro if needed)
-- **Timeline:** 4-5 weeks for MVP
+- **Frontend:** Next.js 16, TypeScript (strict), React 19, Tailwind v4, shadcn/ui (new-york)
+- **Backend:** Next.js Route Handlers, Supabase serverless
+- **Database:** Supabase PostgreSQL, Prisma v7 with PrismaPg adapter
+- **Auth:** Supabase Auth (JWT + @supabase/ssr)
+- **Testing:** Vitest (unit), Playwright (E2E), 43 tests
+- **Hosting:** Vercel (free tier)
+- **Build:** pnpm, GitHub Actions CI
 
 ## Content Strategy
 

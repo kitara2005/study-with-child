@@ -24,112 +24,101 @@
 - Connection pooling config
 - **Deliverable:** `/prisma/schema.prisma`, `/prisma/seed.ts`, Supabase RLS enabled
 
-### Phase 3: Authentication (IN PROGRESS)
+### Phase 3: Authentication ✅
 
-**Status:** 20% | **Duration:** 1 week | **Target:** Feb 10-16, 2026
+**Status:** COMPLETE | **Duration:** 1 week | **Completed:** 2026-02-08
 
-- Supabase Auth setup (email + Google OAuth)
-- User profile creation & management
-- Session management (@supabase/ssr)
-- Protected route middleware
-- Signup/login UI (shadcn/ui forms)
-- **Tasks:**
-  - [ ] Configure Google OAuth in Supabase
-  - [ ] Build signup page (`/auth/signup`)
-  - [ ] Build login page (`/auth/login`)
-  - [ ] Implement user profile creation in Prisma
-  - [ ] Test auth flow with RLS
-  - [ ] Add password reset flow
-- **Deliverable:** Working auth flow, user can signup/login, session persists
+- Supabase Auth (email + Google OAuth)
+- User profiles (email, fullName, avatarUrl, role, grade)
+- Session management (@supabase/ssr client + server)
+- Protected admin routes (role-based access)
+- Signup/login UI (shadcn/ui forms with validation)
+- **Deliverable:**
+  - `/auth/signup` & `/auth/login` pages functional
+  - `app/(auth)/layout.tsx` handles sessions
+  - `app/admin/layout.tsx` validates ADMIN role
+  - All routes tested with E2E tests
 
-### Phase 4: Content Navigation
+### Phase 4: Content Navigation ✅
 
-**Status:** 0% | **Duration:** 1 week | **Target:** Feb 17-23, 2026
+**Status:** COMPLETE | **Duration:** 1 week | **Completed:** 2026-02-08
 
-- Subject pages (detailed view, chapters list)
-- Chapter pages (lessons list)
-- Lesson pages with theory content display
-- Vietnamese slug URL routing
-- Breadcrumb navigation
-- **Tasks:**
-  - [ ] Create `/mon/[subject]/page.tsx`
-  - [ ] Create `/mon/[subject]/chuong-[chapter]/page.tsx`
-  - [ ] Create `/mon/[subject]/chuong-[chapter]/bai-[slug]/page.tsx`
-  - [ ] Build LessonView component (render JSON content)
-  - [ ] Add breadcrumb component
-  - [ ] Test slug routing with special characters
-- **Deliverable:** Click subject → chapters → lessons, all pages load correctly
+- Subject pages with chapter list
+- Chapter pages with lessons list
+- Lesson pages with theory content + exercises
+- Vietnamese slug routing: `/mon/[subjectSlug]/[chapterSlug]/[lessonSlug]`
+- ISR caching (1hr revalidate) on content pages
+- **Deliverable:**
+  - `app/mon/[subjectSlug]/page.tsx` (subject view)
+  - `app/mon/[subjectSlug]/[chapterSlug]/page.tsx` (chapters)
+  - `app/mon/[subjectSlug]/[chapterSlug]/[lessonSlug]/page.tsx` (lesson + exercises)
+  - LessonView component renders JSON content
+  - All links functional, caching optimized
 
-### Phase 5: Exercise System
+### Phase 5: Exercise System ✅
 
-**Status:** 0% | **Duration:** 1 week | **Target:** Feb 24-Mar 2, 2026
+**Status:** COMPLETE | **Duration:** 1 week | **Completed:** 2026-02-08
 
-- Exercise form component (client-side interactivity)
-- 4 exercise types UI: multiple choice, fill-blank, drag-drop, true/false
-- Answer submission & scoring logic
-- Result storage (Prisma)
-- Per-exercise feedback display
-- **Tasks:**
-  - [ ] Build ExerciseForm component
-  - [ ] Implement answer validation & scoring
-  - [ ] Create `/api/results` endpoint (POST)
-  - [ ] Add ExerciseCard display component
-  - [ ] Build result summary (score, stars, explanation)
-  - [ ] Test exercise submission flow
-- **Deliverable:** Student can solve exercises, see score + feedback, result stored in DB
+- 3 exercise types: MULTIPLE_CHOICE, FILL_BLANK, TRUE_FALSE
+- ExerciseForm component with client-side state (React)
+- Auto-grading logic with instant feedback
+- Score: 0-100%, Stars: 0-3 (based on score thresholds)
+- Result storage with answers JSON + metadata
+- **Deliverable:**
+  - `app/api/exercises/submit/route.ts` - POST exercise submission
+  - ExerciseForm component with answer validation
+  - Result display with score, stars, feedback
+  - 120 exercises across 20 lessons
+  - All E2E tested
 
-### Phase 6: Admin Panel
+### Phase 6: Admin Panel ✅
 
-**Status:** 0% | **Duration:** 1 week | **Target:** Mar 3-9, 2026
+**Status:** COMPLETE | **Duration:** 1 week | **Completed:** 2026-02-08
 
-- Admin auth check (role-based)
-- Dashboard: subjects, chapters, lessons CRUD
-- Simple table-based UI (no advanced UX)
-- Content approval state tracking
-- **Tasks:**
-  - [ ] Add `admin/` routes with auth protection
-  - [ ] Build subject management page
-  - [ ] Build chapter management page
-  - [ ] Build lesson management page
-  - [ ] Build exercise management page
-  - [ ] Add form validation
-- **Deliverable:** Admin can create/edit/delete all content, no content visible until admin approves
+- Admin auth protection (role-based access control)
+- Dashboard: subjects, chapters, lessons, exercises CRUD
+- Forms with Zod validation
+- Input checking + error handling
+- **Deliverable:**
+  - `/admin` dashboard page
+  - `/admin/subjects` - list + create form
+  - `/admin/lessons` - list + create/edit forms
+  - `/admin/exercises` - list + create/edit forms
+  - `/admin/users` - users list view
+  - All protected by ADMIN role check
+  - API routes: POST/PUT/DELETE with validation
 
-### Phase 7: Content Pipeline
+### Phase 7: Content Pipeline ✅
 
-**Status:** 0% | **Duration:** 1-2 weeks | **Target:** Mar 10-20, 2026
+**Status:** COMPLETE | **Duration:** 1-2 weeks | **Completed:** 2026-02-08
 
 - Reference content scraper (crawl textbook sites)
 - Claude AI rewriting script (not verbatim copy)
 - Content import tool (seed Lesson + Exercise records)
-- Populate 20 lessons (10 Math + 10 Vietnamese)
-- **Tasks:**
-  - [ ] Identify reference textbook sources (legal/non-commercial)
-  - [ ] Build web scraper (Python Scrapy or Node.js Cheerio)
-  - [ ] Integrate Claude API for content rewriting
-  - [ ] Build content importer (Prisma createMany)
-  - [ ] Populate lessons manually OR via script
-  - [ ] QA: Content accuracy, exercise correctness
-- **Deliverable:** 20 lessons published, students can see + solve exercises
+- Content structure in JSON files (8 subjects, 32 chapters, 20 lessons)
+- Manual content creation + AI refinement
+- Exercise sets (120 exercises across 3 types)
+- **Deliverable:**
+  - `/content/toan/` - Math lessons with exercises
+  - `/content/tieng-viet/` - Vietnamese lessons with exercises
+  - All 8 subjects seeded in database
+  - ISR cached content pages
 
-### Phase 8: Testing & Deployment
+### Phase 8: Testing & Deployment ✅
 
-**Status:** 0% | **Duration:** 1 week | **Target:** Mar 21-27, 2026
+**Status:** COMPLETE | **Duration:** 1 week | **Completed:** 2026-02-08
 
-- Unit tests (Vitest) for utilities, API routes
-- E2E tests (Playwright) for critical flows (auth, exercise submission)
-- Performance testing (Lighthouse, WebPageTest)
-- Security audit (auth, RLS, env vars)
-- Vercel deployment + custom domain setup
-- **Tasks:**
-  - [ ] Write tests for API endpoints
-  - [ ] Write tests for critical user flows
-  - [ ] Run Lighthouse audit (target >90)
-  - [ ] Audit RLS policies (no data leaks)
-  - [ ] Deploy to Vercel (main branch)
-  - [ ] Setup custom domain (optional Phase 8)
-  - [ ] Create runbook for deploying schema changes
-- **Deliverable:** Live MVP at `hoc-cung-con.vercel.app` (or custom domain), all tests pass, <1s page load
+- Unit tests (Vitest) - 43 tests total
+- E2E tests (Playwright) - critical user flows
+- Security validation (RLS policies, auth flows)
+- GitHub Actions CI pipeline
+- Vercel deployment automation
+- **Deliverable:**
+  - `tests/unit/` - utility tests passing
+  - `tests/e2e/` - auth + exercise flows validated
+  - `.github/workflows/ci.yml` - auto-lint, test, build
+  - Live at Vercel (auto-deploy on push to main)
+  - ISR cache optimized, <1s page load
 
 ---
 
