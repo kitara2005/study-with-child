@@ -2,6 +2,7 @@
 
 import { Card } from '@/components/ui/card';
 import { cn } from '@/lib/utils';
+import { CircleCheck } from 'lucide-react';
 
 type MultipleChoiceExerciseProps = {
   question: string;
@@ -20,33 +21,33 @@ export function MultipleChoiceExercise({
     <div className="space-y-4">
       <div className="text-lg font-medium">{question}</div>
       <div className="space-y-3">
-        {options.map((option) => (
-          <Card
-            key={option.value}
-            className={cn(
-              'hover:border-primary cursor-pointer p-4 transition-all',
-              selectedAnswer === option.value &&
-                'border-primary bg-primary/5 ring-primary ring-2'
-            )}
-            onClick={() => onAnswer(option.value)}
-          >
-            <div className="flex items-center gap-3">
-              <div
-                className={cn(
-                  'h-5 w-5 rounded-full border-2 transition-all',
-                  selectedAnswer === option.value
-                    ? 'border-primary bg-primary'
-                    : 'border-muted-foreground/30'
+        {options.map((option) => {
+          const isSelected = selectedAnswer === option.label;
+          return (
+            <Card
+              key={option.value}
+              className={cn(
+                'cursor-pointer border-2 p-4 transition-all',
+                isSelected
+                  ? 'border-blue-500 bg-blue-50 shadow-md'
+                  : 'border-gray-200 hover:border-gray-300 hover:bg-gray-50'
+              )}
+              onClick={() => onAnswer(option.label)}
+            >
+              <div className="flex items-center gap-3">
+                {isSelected ? (
+                  <CircleCheck className="h-6 w-6 shrink-0 text-blue-600" />
+                ) : (
+                  <div className="h-6 w-6 shrink-0 rounded-full border-2 border-gray-300" />
                 )}
-              >
-                {selectedAnswer === option.value && (
-                  <div className="h-full w-full scale-50 rounded-full bg-white" />
-                )}
+                <span className={cn(isSelected && 'font-medium text-blue-900')}>
+                  <span className="font-semibold">{option.label}.</span>{' '}
+                  {option.value}
+                </span>
               </div>
-              <span>{option.label}</span>
-            </div>
-          </Card>
-        ))}
+            </Card>
+          );
+        })}
       </div>
     </div>
   );

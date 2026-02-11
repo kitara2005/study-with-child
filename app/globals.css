@@ -1,5 +1,11 @@
 @import 'tailwindcss';
 
+/* Center container and add horizontal padding */
+@utility container {
+  margin-inline: auto;
+  padding-inline: 1rem;
+}
+
 @theme inline {
   --radius-lg: 0.5rem;
   --radius-md: calc(var(--radius-lg) - 2px);

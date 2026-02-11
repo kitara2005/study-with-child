@@ -1,8 +1,12 @@
 import { PrismaClient } from '../lib/generated/prisma';
+import { PrismaPg } from '@prisma/adapter-pg';
+import { Pool } from 'pg';
 import { readFileSync, readdirSync, statSync } from 'fs';
 import { join } from 'path';
 
-const prisma = new PrismaClient();
+const pool = new Pool({ connectionString: process.env.DATABASE_URL });
+const adapter = new PrismaPg(pool);
+const prisma = new PrismaClient({ adapter });
 
 interface LessonSection {
   type: 'heading' | 'paragraph' | 'visual' | 'example';
